@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="es" class="sem-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulacro ITIL® Foundation versión 5 gratis: 10 preguntas comentadas</title>
+<meta name="description" content="10 preguntas gratis al estilo del examen ITIL® Foundation versión 5, con la explicación de cada alternativa. Sin registro.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Simulacro ITIL® Foundation versión 5 gratis: 10 preguntas comentadas">
+<meta property="og:description" content="10 preguntas gratis al estilo del examen ITIL® Foundation versión 5, con la explicación de cada alternativa. Sin registro.">
+<meta property="og:locale" content="es_LA">
+<link rel="canonical" href="https://simulado-explicado.github.io/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://simulado-explicado.github.io/">
+<link rel="alternate" hreflang="es" href="https://simulado-explicado.github.io/es/">
+<link rel="alternate" hreflang="x-default" href="https://simulado-explicado.github.io/">
+<meta property="og:url" content="https://simulado-explicado.github.io/es/">
+<meta property="og:image" content="https://simulado-explicado.github.io/capa.png">
+<meta name="theme-color" content="#0f4c4d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Crect width='800' height='800' rx='160' fill='%230f4c4d'/%3E%3Cpath d='M190 250a70 70 0 0 1 70-70h280a70 70 0 0 1 70 70v200a70 70 0 0 1-70 70H390l-90 80 14-80h-54a70 70 0 0 1-70-70z' fill='%23f6b73c'/%3E%3Cpath d='M300 350l66 70 136-150' stroke='%230f4c4d' stroke-width='56' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root {
+  --bg: #f6f4ef; --surface: #ffffff; --ink: #1b2425; --muted: #586566; --line: #ddd8cc;
+  --accent: #0f4c4d; --accent-ink: #ffffff; --accent-soft: #e2eded; --amber: #f6b73c; --amber-soft: #fdf1d8;
+  --ok: #1d7347; --ok-bg: #e5f2ea; --bad: #b02a20; --bad-bg: #fbe8e5;
+  --f-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --f-mono: ui-monospace, "SF Mono", Consolas, "Liberation Mono", monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1515; --surface: #162021; --ink: #e6eceb; --muted: #9babab; --line: #2a3839;
+    --accent: #7cc9c6; --accent-ink: #0e1515; --accent-soft: #1b3132; --amber: #f6b73c; --amber-soft: #2e2716;
+    --ok: #63c38f; --ok-bg: #142a1e; --bad: #f08b80; --bad-bg: #331a18;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1515; --surface: #162021; --ink: #e6eceb; --muted: #9babab; --line: #2a3839;
+  --accent: #7cc9c6; --accent-ink: #0e1515; --accent-soft: #1b3132; --amber: #f6b73c; --amber-soft: #2e2716;
+  --ok: #63c38f; --ok-bg: #142a1e; --bad: #f08b80; --bad-bg: #331a18;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-sans); font-size: 17px; line-height: 1.55; }
+a { color: var(--accent); }
+.pagina { max-width: 720px; margin: 0 auto; padding: 16px 16px 48px; display: grid; gap: 28px; }
+.conteudo { display: grid; gap: 28px; min-width: 0; }
+
+.barra { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.marca { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -.01em; }
+.marca svg { width: 34px; height: 34px; flex: none; }
+.idioma { font-size: 15px; font-weight: 600; }
+
+.abertura { display: grid; gap: 12px; }
+.rotulo { margin: 0; font-family: var(--f-mono); font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { margin: 0; font-size: clamp(26px, 6vw, 36px); line-height: 1.15; letter-spacing: -.02em; text-wrap: balance; }
+.intro { margin: 0; color: var(--muted); max-width: 60ch; }
+.fatos { margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.fatos li { font-size: 14px; background: var(--amber-soft); border-radius: 999px; padding: 4px 12px; }
+
+.questoes { margin: 0; padding: 0; list-style: none; display: grid; gap: 20px; }
+.questao { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px; display: grid; gap: 14px; min-width: 0; scroll-margin-top: 16px; }
+.cabeca { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 12px; }
+.num { font-family: var(--f-mono); font-size: 13px; font-weight: 600; color: var(--muted); }
+.chip { font-family: var(--f-mono); font-size: 12px; font-weight: 500; color: var(--accent); background: var(--accent-soft); padding: 3px 8px; border-radius: 5px; }
+.enunciado { margin: 0; font-size: 18px; font-weight: 500; }
+.opcoes { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.opcao {
+  width: 100%; display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; text-align: left;
+  font: inherit; font-size: 16px; color: var(--ink); background: var(--surface);
+  border: 1.5px solid var(--line); border-radius: 8px; padding: 11px 14px; cursor: pointer;
+}
+.opcao .letra {
+  width: 26px; height: 26px; display: grid; place-items: center; border-radius: 6px; border: 1px solid var(--line);
+  font-family: var(--f-mono); font-size: 13px; font-weight: 600; color: var(--muted);
+}
+.sem-js .opcao { cursor: default; }
+.opcao:hover:not([aria-disabled]) { border-color: var(--accent); }
+.opcao[aria-disabled] { cursor: default; }
+.opcao.certa { border-color: var(--ok); background: var(--ok-bg); }
+.opcao.certa .letra { background: var(--ok); border-color: var(--ok); color: var(--surface); }
+.opcao.errada { border-color: var(--bad); background: var(--bad-bg); }
+.opcao.errada .letra { background: var(--bad); border-color: var(--bad); color: var(--surface); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.veredito { margin: 0; font-weight: 700; }
+.veredito.ok { color: var(--ok); }
+.veredito.bad { color: var(--bad); }
+details { border-top: 1px solid var(--line); padding-top: 12px; }
+summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+.explica { display: grid; gap: 10px; margin-top: 12px; }
+.explica p { margin: 0; }
+.gabarito b { color: var(--ok); }
+.sub { font-weight: 600; }
+.porque { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; color: var(--muted); font-size: 15px; }
+.porque li { display: grid; grid-template-columns: 24px 1fr; gap: 6px; }
+.porque b { font-family: var(--f-mono); }
+
+.placar { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: grid; gap: 4px; }
+.placar .total { margin: 0; font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.placar p { margin: 0; color: var(--muted); }
+
+.cta { background: var(--accent); color: var(--accent-ink); border-radius: 14px; padding: 24px 20px; display: grid; gap: 12px; }
+.cta h2 { margin: 0; font-size: 24px; line-height: 1.2; letter-spacing: -.01em; }
+.cta p { margin: 0; opacity: .92; }
+.botao {
+  justify-self: start; display: inline-block; text-decoration: none; font-weight: 700; font-size: 16px;
+  background: var(--amber); color: #1b2425; border-radius: 9px; padding: 12px 18px;
+}
+.botao:hover { filter: brightness(1.05); }
+.cupom { border-top: 1px solid color-mix(in srgb, var(--accent-ink) 25%, transparent); padding-top: 12px; display: grid; gap: 10px; }
+.botao.claro { background: transparent; color: var(--accent-ink); border: 1.5px solid currentColor; }
+
+.rodape { display: grid; gap: 6px; font-size: 13px; color: var(--muted); }
+.rodape p { margin: 0; max-width: 62ch; }
+@media (prefers-reduced-motion: no-preference) {
+  .veredito { animation: entra .18s ease-out; }
+  @keyframes entra { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+}
+</style>
+</head>
+<body>
+<div class="pagina">
+  <header class="barra">
+    <a class="marca" href="./">
+      <svg viewBox="0 0 800 800" aria-hidden="true"><rect width="800" height="800" rx="160" fill="#0f4c4d"/><path d="M190 250a70 70 0 0 1 70-70h280a70 70 0 0 1 70 70v200a70 70 0 0 1-70 70H390l-90 80 14-80h-54a70 70 0 0 1-70-70z" fill="#f6b73c"/><path d="M300 350l66 70 136-150" stroke="#0f4c4d" stroke-width="56" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Simulado Explicado
+    </a>
+    <a class="idioma" href="../" hreflang="pt-BR" lang="pt-BR">Português</a>
+  </header>
+
+  <main class="conteudo">
+    <section class="abertura">
+      <p class="rotulo">Gratis · sin registro</p>
+      <h1>10 preguntas comentadas del examen ITIL® Foundation versión 5</h1>
+      <p class="intro">Preguntas nuevas, al estilo del examen, sobre los temas que más aparecen. Elige una alternativa para ver si acertaste y por qué cada una de las otras está mal.</p>
+      <ul class="fatos"><li>10 preguntas</li><li>unos 15 minutos</li><li>explicación de todas las alternativas</li></ul>
+    </section>
+
+    <ol class="questoes">
+      <li class="questao" id="q1" data-certa="B">
+        <div class="cabeca"><span class="num">Pregunta 1 de 10</span><span class="chip">Principios guía</span></div>
+        <p class="enunciado">El equipo de seguridad empieza a exigir el cambio de contraseña cada 30 días, para todos los empleados. La regla empieza un lunes. Esa misma semana, los tickets de contraseña bloqueada se triplican, la cola del service desk supera los dos días y las ventas se atrasan, porque los vendedores se quedan sin acceso. ¿Qué principio guía se ignoró?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Comenzar donde se está</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Pensar y trabajar de forma holística</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Optimizar y automatizar</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Mantenerlo simple y práctico</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver respuesta y explicación</summary>
+          <div class="explica">
+            <p class="gabarito">Respuesta correcta: <b>B) Pensar y trabajar de forma holística</b></p>
+            <p>Ninguna parte de la organización funciona sola: un cambio hecho por un equipo afecta a otros equipos, procesos y servicios. Antes de cambiar la regla, seguridad debía evaluar su efecto en el service desk, en los usuarios y en las ventas. Podía, por ejemplo, preparar al service desk y ofrecer una forma simple de cambiar la contraseña sin ayuda.</p>
+            <p class="sub">Por qué las otras están mal</p>
+            <ul class="porque">
+              <li><b>A</b><span>Ese principio habla de aprovechar lo que ya existe antes de crear algo nuevo. El caso no trata de eso.</span></li>
+              <li><b>C</b><span>Nadie optimizó ni automatizó un proceso. Hubo una regla nueva que afectó a otras áreas.</span></li>
+              <li><b>D</b><span>La regla es simple. El problema fue no mirar su efecto en el resto de la organización.</span></li>
+            </ul>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q2" data-certa="D">
+        <div class="cabeca"><span class="num">Pregunta 2 de 10</span><span class="chip">Principios guía</span></div>
+        <p class="enunciado">TI mide el éxito del nuevo portal de RR. HH. por el número de funciones entregadas: ya son 40. Aun así, los empleados siguen llamando a RR. HH. con dudas sobre vacaciones y nómina, porque no encuentran las respuestas en el portal. Según el principio “Enfocarse en el valor”, ¿qué debería medir TI?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Cuántas funciones nuevas entrega el equipo por mes, comparado con el plan del proyecto</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Cuánto costó cada función del portal, para mostrar a la dirección el retorno del proyecto</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Cuántas horas trabajó el equipo de desarrollo en el portal cada mes</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Si los empleados logran resolver sus dudas por el portal, sin llamar a RR. HH.</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver respuesta y explicación</summary>
+          <div class="explica">
+            <p class="gabarito">Respuesta correcta: <b>D) Si los empleados logran resolver sus dudas por el portal, sin llamar a RR. HH.</b></p>
+            <p>Todo lo que hace la organización debe generar valor para las partes interesadas, y el valor es lo que percibe el consumidor. Las funciones entregadas son salidas del trabajo. Lo que importa es el resultado para quien usa el portal: resolver la duda sin tener que llamar. Medir eso muestra si el portal genera valor.</p>
+            <p class="sub">Por qué las otras están mal</p>
+            <ul class="porque">
+              <li><b>A</b><span>Contar funciones entregadas mide la salida del trabajo, no el beneficio para los empleados.</span></li>
+              <li><b>B</b><span>El costo importa, pero no muestra si los empleados reciben ayuda.</span></li>
+              <li><b>C</b><span>Las horas trabajadas miden esfuerzo, no valor.</span></li>
+            </ul>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q3" data-certa="A">
+        <div class="cabeca"><span class="num">Pregunta 3 de 10</span><span class="chip">Valor y experiencia</span></div>
+        <p class="enunciado">El nuevo sistema de control horario nunca se cae, es rápido y protege bien los datos. Pero no registra las horas extra, y RR. HH. las necesita para calcular el salario. Por eso, RR. HH. sigue haciendo planillas a mano. ¿Qué le falta a este servicio?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Utilidad</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Garantía</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Sostenibilidad</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Experiencia del usuario</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver respuesta y explicación</summary>
+          <div class="explica">
+            <p class="gabarito">Respuesta correcta: <b>A) Utilidad</b></p>
+            <p>La utilidad es lo que hace el servicio: si cumple la necesidad, es decir, si es apto para el propósito. La garantía es cómo funciona: disponibilidad, capacidad, seguridad y continuidad. Aquí la garantía está bien, pero el sistema no hace algo que RR. HH. necesita. Falta utilidad, y sin ella el servicio no genera el valor esperado.</p>
+            <p class="sub">Por qué las otras están mal</p>
+            <ul class="porque">
+              <li><b>B</b><span>La garantía está bien: el sistema no se cae, es rápido y seguro.</span></li>
+              <li><b>C</b><span>La sostenibilidad es cumplir requisitos ambientales, sociales y económicos. El caso no habla de eso.</span></li>
+              <li><b>D</b><span>La experiencia del usuario es cómo se siente la persona al usarlo. El problema es una función que falta, no la facilidad de uso.</span></li>
+            </ul>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q4" data-certa="C">
+        <div class="cabeca"><span class="num">Pregunta 4 de 10</span><span class="chip">Sistema de Valor</span></div>
+        <p class="enunciado">A las 7 h, el lector de credenciales de la entrada deja de funcionar, y nadie puede entrar al edificio. El técnico cambia el lector, y la entrada vuelve a la normalidad a las 7:40. ¿Cómo llama el framework a esta interrupción?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Un problema, porque un equipo se rompió y hubo que cambiarlo</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Un evento, porque el lector cambió de estado y avisaron al técnico</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Un incidente, porque el servicio se detuvo sin estar planificado</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Una solicitud de servicio, porque el técnico atendió un pedido</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver respuesta y explicación</summary>
+          <div class="explica">
+            <p class="gabarito">Respuesta correcta: <b>C) Un incidente, porque el servicio se detuvo sin estar planificado</b></p>
+            <p>Un incidente es una interrupción no planificada de un servicio o una caída en su calidad. El objetivo es restaurar el servicio lo antes posible, como hizo el técnico. Si el lector se rompiera todas las semanas, el equipo registraría un problema para investigar la causa.</p>
+            <p class="sub">Por qué las otras están mal</p>
+            <ul class="porque">
+              <li><b>A</b><span>Un problema es la causa, o posible causa, de uno o más incidentes. Cambiar el lector resolvió la interrupción, y nadie investigó la causa.</span></li>
+              <li><b>B</b><span>Un evento es un cambio de estado que importa para la gestión, como una alerta. Cuando el servicio se detiene, lo que se trata es un incidente.</span></li>
+              <li><b>D</b><span>Una solicitud de servicio es un pedido previsto, como pedir una credencial nueva. Aquí algo se rompió.</span></li>
+            </ul>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q5" data-certa="B">
+        <div class="cabeca"><span class="num">Pregunta 5 de 10</span><span class="chip">Sistema de Valor</span></div>
+        <p class="enunciado">Un compañero estudia para el examen de la versión 5 con un resumen que dice: “La cadena de valor tiene seis actividades: planificar, mejorar, involucrar, diseño y transición, obtener/construir, entregar y dar soporte.” ¿Qué está mal?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Nada: la cadena de valor de la versión 5 sigue teniendo esas mismas seis actividades</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>La lista es de la versión 4; la versión 5 usa las ocho actividades del ciclo de vida</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>La lista está bien, pero falta la séptima actividad, que es monitorear y medir</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>La cadena de valor salió de la versión 5 y se cambió por las cuatro dimensiones</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver respuesta y explicación</summary>
+          <div class="explica">
+            <p class="gabarito">Respuesta correcta: <b>B) La lista es de la versión 4; la versión 5 usa las ocho actividades del ciclo de vida</b></p>
+            <p>En la versión 5, las actividades de la cadena de valor son las ocho del Ciclo de Vida de Productos y Servicios: descubrir, diseñar, adquirir, construir, hacer la transición, operar, entregar y dar soporte. Las seis actividades del resumen eran de la versión 4. Mucho material en internet todavía es de la versión 4, y el examen pregunta por las diferencias.</p>
+            <p class="sub">Por qué las otras están mal</p>
+            <ul class="porque">
+              <li><b>A</b><span>Las seis actividades eran de la versión 4. En la versión 5 son ocho.</span></li>
+              <li><b>C</b><span>No existe una actividad “monitorear y medir” en la cadena de valor.</span></li>
+              <li><b>D</b><span>La cadena de valor sigue siendo uno de los cinco componentes del Sistema de Valor. Las cuatro dimensiones son otra cosa.</span></li>
+            </ul>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q6" data-certa="A">
+        <div class="cabeca"><span class="num">Pregunta 6 de 10</span><span class="chip">Sistema de Valor</span></div>
+        <p class="enunciado">El equipo midió que el chat de atención tarda, en promedio, 12 minutos en dar la primera respuesta. Ahora define la meta: responder en 3 minutos como máximo antes de junio, con una nota de satisfacción de al menos 4,5. ¿En qué paso del modelo de mejora continua está el equipo?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>¿Dónde queremos estar?</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>¿Dónde estamos ahora?</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>¿Cómo llegamos allí?</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>¿Estamos llegando?</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver respuesta y explicación</summary>
+          <div class="explica">
+            <p class="gabarito">Respuesta correcta: <b>A) ¿Dónde queremos estar?</b></p>
+            <p>Después de medir el punto de partida (¿Dónde estamos ahora?), el equipo define adónde quiere llegar, con metas que se pueden medir. Ese es el paso “¿Dónde queremos estar?”. Después viene el plan (¿Cómo llegamos allí?). El orden completo es: ¿Cuál es la visión? ¿Dónde estamos ahora? ¿Dónde queremos estar? ¿Cómo llegamos allí? Actuar. ¿Estamos llegando? ¿Cómo mantenemos las mejoras relevantes?</p>
+            <p class="sub">Por qué las otras están mal</p>
+            <ul class="porque">
+              <li><b>B</b><span>Ese paso ya se hizo: el equipo midió los 12 minutos.</span></li>
+              <li><b>C</b><span>Ese paso es armar el plan de acciones. El equipo todavía está definiendo la meta.</span></li>
+              <li><b>D</b><span>Ese paso es medir el avance, después de actuar.</span></li>
+            </ul>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q7" data-certa="C">
+        <div class="cabeca"><span class="num">Pregunta 7 de 10</span><span class="chip">Cuatro dimensiones</span></div>
+        <p class="enunciado">La empresa junta a desarrolladores y analistas de operación en equipos por producto, cada uno con un líder. También cambia la evaluación de desempeño, para premiar el resultado del equipo y no el de cada persona. ¿Qué dimensión está en foco?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Flujos de valor y procesos</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Información y tecnología</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Organizaciones y personas</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Socios y proveedores</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver respuesta y explicación</summary>
+          <div class="explica">
+            <p class="gabarito">Respuesta correcta: <b>C) Organizaciones y personas</b></p>
+            <p>La dimensión “Organizaciones y personas” trata de la estructura de la organización, los roles, las responsabilidades, el liderazgo y la cultura. Armar equipos por producto, definir líderes y cambiar la forma de evaluar el desempeño son decisiones de esa dimensión.</p>
+            <p class="sub">Por qué las otras están mal</p>
+            <ul class="porque">
+              <li><b>A</b><span>Esa dimensión trata de cómo fluye el trabajo y qué pasos tiene. El caso cambia quién está en cada equipo y cómo se evalúa a las personas.</span></li>
+              <li><b>B</b><span>No hay cambios en sistemas, datos ni herramientas.</span></li>
+              <li><b>D</b><span>No hay ninguna empresa externa involucrada.</span></li>
+            </ul>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q8" data-certa="D">
+        <div class="cabeca"><span class="num">Pregunta 8 de 10</span><span class="chip">Ciclo de vida</span></div>
+        <p class="enunciado">¿Cuál de estas situaciones forma parte de la actividad “entregar”, y no de “dar soporte”?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Una usuaria no puede imprimir, y el analista cambia el driver defectuoso</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>El sistema de ventas se pone lento de repente, y el equipo restaura el rendimiento</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Un empleado ve un error al guardar archivos, y el analista corrige la falla</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Una gerente pide por el portal una licencia prevista en el catálogo y la recibe</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver respuesta y explicación</summary>
+          <div class="explica">
+            <p class="gabarito">Respuesta correcta: <b>D) Una gerente pide por el portal una licencia prevista en el catálogo y la recibe</b></p>
+            <p>“Entregar” es proveer el servicio como se acordó: atender pedidos previstos, como una licencia del catálogo, cuidar la experiencia y recoger retroalimentación. “Dar soporte” es ayudar cuando algo sale mal: resolver incidentes y problemas y restaurar el servicio. En las otras tres situaciones, algo se rompió o empeoró.</p>
+            <p class="sub">Por qué las otras están mal</p>
+            <ul class="porque">
+              <li><b>A</b><span>El driver defectuoso causó una falla. Resolverla es dar soporte.</span></li>
+              <li><b>B</b><span>La lentitud es una caída de calidad, es decir, un incidente. Restaurar el rendimiento es dar soporte.</span></li>
+              <li><b>C</b><span>Corregir un error que molesta al usuario es dar soporte.</span></li>
+            </ul>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q9" data-certa="A">
+        <div class="cabeca"><span class="num">Pregunta 9 de 10</span><span class="chip">Flujos de valor</span></div>
+        <p class="enunciado">Un hospital mapeó cuatro flujos de valor. ¿Cuál de ellos es un flujo de valor principal (core)?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Paciente agenda un examen → paciente recibe el resultado</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Termina el mes → salarios del personal pagados</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Vacante de enfermería abierta → enfermera contratada</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Un equipo médico se rompe → equipo reparado por mantenimiento</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver respuesta y explicación</summary>
+          <div class="explica">
+            <p class="gabarito">Respuesta correcta: <b>A) Paciente agenda un examen → paciente recibe el resultado</b></p>
+            <p>Un flujo de valor principal (core) crea y entrega valor directamente a los clientes o consumidores, aquí los pacientes. Un flujo de apoyo (enabling) sostiene a la propia organización, como pagar salarios, contratar personas y mantener los equipos. Los flujos de apoyo también importan: sin ellos, los principales no funcionan.</p>
+            <p class="sub">Por qué las otras están mal</p>
+            <ul class="porque">
+              <li><b>B</b><span>Pagar salarios sostiene a la organización: es un flujo de apoyo.</span></li>
+              <li><b>C</b><span>Contratar personas es un flujo de apoyo. El paciente no es su consumidor.</span></li>
+              <li><b>D</b><span>El mantenimiento interno sostiene la operación del hospital: es un flujo de apoyo.</span></li>
+            </ul>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q10" data-certa="B">
+        <div class="cabeca"><span class="num">Pregunta 10 de 10</span><span class="chip">Recorrido del servicio</span></div>
+        <p class="enunciado">Después de algunas reuniones, el proveedor entiende lo que necesita la escuela. Lo transforma en requisitos claros y presenta tres paquetes de servicio, con precios, horarios de atención y plazos diferentes, para que la escuela elija. Todavía no se firmó nada. ¿En qué etapa del recorrido del servicio están?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Involucrar</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Ofrecer</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Acordar</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Incorporar</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver respuesta y explicación</summary>
+          <div class="explica">
+            <p class="gabarito">Respuesta correcta: <b>B) Ofrecer</b></p>
+            <p>Las siete etapas del recorrido del servicio son: explorar, involucrar, ofrecer, acordar, incorporar, cocrear y reflexionar. En “ofrecer”, la demanda del consumidor se convierte en requisitos y propuestas claras. Después, en “acordar”, las partes formalizan lo que se eligió.</p>
+            <p class="sub">Por qué las otras están mal</p>
+            <ul class="porque">
+              <li><b>A</b><span>Involucrar es construir la relación y la confianza y entender las necesidades. Eso ya pasó en las reuniones.</span></li>
+              <li><b>C</b><span>Acordar es formalizar el alcance y la calidad. Todavía no se firmó nada.</span></li>
+              <li><b>D</b><span>Incorporar es juntar los recursos de las dos partes para empezar a usar el servicio, después del acuerdo.</span></li>
+            </ul>
+          </div>
+        </details>
+      </li>
+    </ol>
+
+    <section class="placar" aria-live="polite">
+      <p class="total" id="total">0 de 10 respondidas</p>
+      <p id="nota" hidden></p>
+    </section>
+
+    <section class="cta">
+      <h2>¿Quieres practicar con 240 preguntas?</h2>
+      <p>Los 6 simulacros completos llegan pronto a Udemy. Cada uno tiene 40 preguntas, 60 minutos y nota mínima de 65 %, como el examen. Todas las preguntas explican cada alternativa, como aquí. Vuelve a esta página para ver el enlace.</p>
+
+
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Material independiente y no oficial. ITIL® es una marca registrada de PeopleCert.</p>
+    <p>Preguntas originales, escritas con apoyo de inteligencia artificial a partir del programa oficial de la versión 5 (febrero de 2026).</p>
+    <p>Esta página no usa cookies ni seguimiento.</p>
+  </footer>
+</div>
+<script type="application/json" id="textos">{"acertou":"¡Correcto!","errou":"Esta vez no.","respondidas":"{X} de {T} respondidas","placar":"Acertaste {X} de {T}","acima":"Por encima de la nota mínima del examen (65 %).","abaixo":"Por debajo de la nota mínima del examen (65 %). Vuelve a leer las explicaciones de las que fallaste."}</script>
+<script>
+(function () {
+  document.documentElement.classList.remove("sem-js");
+  var T = JSON.parse(document.getElementById("textos").textContent);
+  var questoes = Array.prototype.slice.call(document.querySelectorAll(".questao"));
+  var total = document.getElementById("total"), nota = document.getElementById("nota");
+  var respondidas = 0, acertos = 0;
+  function preencher(s, x) { return s.replace("{X}", x).replace("{T}", questoes.length); }
+  questoes.forEach(function (q) {
+    var opcoes = Array.prototype.slice.call(q.querySelectorAll(".opcao"));
+    opcoes.forEach(function (b) {
+      b.addEventListener("click", function () {
+        if (q.classList.contains("respondida")) return;
+        q.classList.add("respondida");
+        var ok = b.getAttribute("data-letra") === q.getAttribute("data-certa");
+        respondidas++; if (ok) acertos++;
+        opcoes.forEach(function (o) {
+          o.setAttribute("aria-disabled", "true");
+          if (o.getAttribute("data-letra") === q.getAttribute("data-certa")) o.classList.add("certa");
+        });
+        if (!ok) b.classList.add("errada");
+        b.setAttribute("aria-pressed", "true");
+        var v = q.querySelector(".veredito");
+        v.textContent = ok ? T.acertou : T.errou;
+        v.className = "veredito " + (ok ? "ok" : "bad");
+        v.hidden = false;
+        q.querySelector("details").open = true;
+        if (respondidas === questoes.length) {
+          total.textContent = preencher(T.placar, acertos);
+          nota.textContent = acertos / questoes.length >= 0.65 ? T.acima : T.abaixo;
+          nota.hidden = false;
+        } else {
+          total.textContent = preencher(T.respondidas, respondidas);
+        }
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
