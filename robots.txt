@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://simulado-explicado.github.io/sitemap.xml
