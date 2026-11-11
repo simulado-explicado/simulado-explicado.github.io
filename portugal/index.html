@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="pt-BR" class="sem-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulado do teste de nacionalidade portuguesa: 15 questões comentadas</title>
+<meta name="description" content="15 questões grátis sobre os temas do novo teste da nacionalidade portuguesa (Lei Orgânica 1/2026), com a explicação de cada alternativa e o link para a lei. Sem cadastro.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Simulado do teste de nacionalidade portuguesa: 15 questões comentadas">
+<meta property="og:description" content="15 questões grátis sobre os temas do novo teste da nacionalidade portuguesa (Lei Orgânica 1/2026), com a explicação de cada alternativa e o link para a lei. Sem cadastro.">
+<meta property="og:locale" content="pt_BR">
+<link rel="canonical" href="https://simulado-explicado.github.io/portugal/">
+<meta property="og:url" content="https://simulado-explicado.github.io/portugal/">
+<meta name="theme-color" content="#0f4c4d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Crect width='800' height='800' rx='160' fill='%230f4c4d'/%3E%3Cpath d='M190 250a70 70 0 0 1 70-70h280a70 70 0 0 1 70 70v200a70 70 0 0 1-70 70H390l-90 80 14-80h-54a70 70 0 0 1-70-70z' fill='%23f6b73c'/%3E%3Cpath d='M300 350l66 70 136-150' stroke='%230f4c4d' stroke-width='56' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root {
+  --bg: #f6f4ef; --surface: #ffffff; --ink: #1b2425; --muted: #586566; --line: #ddd8cc;
+  --accent: #0f4c4d; --accent-ink: #ffffff; --accent-soft: #e2eded; --amber: #f6b73c; --amber-soft: #fdf1d8;
+  --ok: #1d7347; --ok-bg: #e5f2ea; --bad: #b02a20; --bad-bg: #fbe8e5;
+  --f-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --f-mono: ui-monospace, "SF Mono", Consolas, "Liberation Mono", monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1515; --surface: #162021; --ink: #e6eceb; --muted: #9babab; --line: #2a3839;
+    --accent: #7cc9c6; --accent-ink: #0e1515; --accent-soft: #1b3132; --amber: #f6b73c; --amber-soft: #2e2716;
+    --ok: #63c38f; --ok-bg: #142a1e; --bad: #f08b80; --bad-bg: #331a18;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1515; --surface: #162021; --ink: #e6eceb; --muted: #9babab; --line: #2a3839;
+  --accent: #7cc9c6; --accent-ink: #0e1515; --accent-soft: #1b3132; --amber: #f6b73c; --amber-soft: #2e2716;
+  --ok: #63c38f; --ok-bg: #142a1e; --bad: #f08b80; --bad-bg: #331a18;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-sans); font-size: 17px; line-height: 1.55; }
+a { color: var(--accent); }
+.pagina { max-width: 720px; margin: 0 auto; padding: 16px 16px 48px; display: grid; gap: 28px; }
+.conteudo { display: grid; gap: 28px; min-width: 0; }
+
+.barra { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.marca { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -.01em; }
+.marca svg { width: 34px; height: 34px; flex: none; }
+.idioma { font-size: 15px; font-weight: 600; }
+
+.abertura { display: grid; gap: 12px; }
+.rotulo { margin: 0; font-family: var(--f-mono); font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { margin: 0; font-size: clamp(26px, 6vw, 36px); line-height: 1.15; letter-spacing: -.02em; text-wrap: balance; }
+.intro { margin: 0; color: var(--muted); max-width: 60ch; }
+.fatos { margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.fatos li { font-size: 14px; background: var(--amber-soft); border-radius: 999px; padding: 4px 12px; }
+
+.questoes { margin: 0; padding: 0; list-style: none; display: grid; gap: 20px; }
+.questao { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px; display: grid; gap: 14px; min-width: 0; scroll-margin-top: 16px; }
+.cabeca { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 12px; }
+.num { font-family: var(--f-mono); font-size: 13px; font-weight: 600; color: var(--muted); }
+.chip { font-family: var(--f-mono); font-size: 12px; font-weight: 500; color: var(--accent); background: var(--accent-soft); padding: 3px 8px; border-radius: 5px; }
+.enunciado { margin: 0; font-size: 18px; font-weight: 500; }
+.opcoes { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.opcao {
+  width: 100%; display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; text-align: left;
+  font: inherit; font-size: 16px; color: var(--ink); background: var(--surface);
+  border: 1.5px solid var(--line); border-radius: 8px; padding: 11px 14px; cursor: pointer;
+}
+.opcao .letra {
+  width: 26px; height: 26px; display: grid; place-items: center; border-radius: 6px; border: 1px solid var(--line);
+  font-family: var(--f-mono); font-size: 13px; font-weight: 600; color: var(--muted);
+}
+.sem-js .opcao { cursor: default; }
+.opcao:hover:not([aria-disabled]) { border-color: var(--accent); }
+.opcao[aria-disabled] { cursor: default; }
+.opcao.certa { border-color: var(--ok); background: var(--ok-bg); }
+.opcao.certa .letra { background: var(--ok); border-color: var(--ok); color: var(--surface); }
+.opcao.errada { border-color: var(--bad); background: var(--bad-bg); }
+.opcao.errada .letra { background: var(--bad); border-color: var(--bad); color: var(--surface); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.veredito { margin: 0; font-weight: 700; }
+.veredito.ok { color: var(--ok); }
+.veredito.bad { color: var(--bad); }
+details { border-top: 1px solid var(--line); padding-top: 12px; }
+summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+.explica { display: grid; gap: 10px; margin-top: 12px; }
+.explica p { margin: 0; }
+.gabarito b { color: var(--ok); }
+.sub { font-weight: 600; }
+.porque { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; color: var(--muted); font-size: 15px; }
+.porque li { display: grid; grid-template-columns: 24px 1fr; gap: 6px; }
+.porque b { font-family: var(--f-mono); }
+
+.placar { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: grid; gap: 4px; }
+.placar .total { margin: 0; font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.placar p { margin: 0; color: var(--muted); }
+
+.cta { background: var(--accent); color: var(--accent-ink); border-radius: 14px; padding: 24px 20px; display: grid; gap: 12px; }
+.cta h2 { margin: 0; font-size: 24px; line-height: 1.2; letter-spacing: -.01em; }
+.cta p { margin: 0; opacity: .92; }
+.botao {
+  justify-self: start; display: inline-block; text-decoration: none; font-weight: 700; font-size: 16px;
+  background: var(--amber); color: #1b2425; border-radius: 9px; padding: 12px 18px;
+}
+.botao:hover { filter: brightness(1.05); }
+.cupom { border-top: 1px solid color-mix(in srgb, var(--accent-ink) 25%, transparent); padding-top: 12px; display: grid; gap: 10px; }
+.botao.claro { background: transparent; color: var(--accent-ink); border: 1.5px solid currentColor; }
+
+.rodape { display: grid; gap: 6px; font-size: 13px; color: var(--muted); }
+.rodape p { margin: 0; max-width: 62ch; }
+@media (prefers-reduced-motion: no-preference) {
+  .veredito { animation: entra .18s ease-out; }
+  @keyframes entra { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+}
+
+.aviso { background: var(--amber-soft); border-radius: 12px; padding: 16px 18px; display: grid; gap: 8px; font-size: 15px; }
+.aviso p { margin: 0; }
+.aviso ul { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.fonte { font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="pagina">
+  <header class="barra">
+    <a class="marca" href="../">
+      <svg viewBox="0 0 800 800" aria-hidden="true"><rect width="800" height="800" rx="160" fill="#0f4c4d"/><path d="M190 250a70 70 0 0 1 70-70h280a70 70 0 0 1 70 70v200a70 70 0 0 1-70 70H390l-90 80 14-80h-54a70 70 0 0 1-70-70z" fill="#f6b73c"/><path d="M300 350l66 70 136-150" stroke="#0f4c4d" stroke-width="56" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Simulado Explicado
+    </a>
+  </header>
+
+  <main class="conteudo">
+    <section class="abertura">
+      <p class="rotulo">Grátis · sem cadastro</p>
+      <h1>15 questões comentadas para o teste de nacionalidade portuguesa</h1>
+      <p class="intro">Cultura, história, símbolos nacionais, direitos e deveres e organização do Estado: os temas que o art. 6.º da Lei da Nacionalidade exige. Escolha uma alternativa para ver se acertou, por que cada uma das outras está errada e o texto oficial de onde vem a resposta.</p>
+      <ul class="fatos"><li>15 questões</li><li>uns 15 minutos</li><li>link para a lei em cada resposta</li></ul>
+    </section>
+
+    <section class="aviso">
+      <p><b>O formato oficial da prova ainda não saiu.</b> O Governo aprovou o decreto-lei que regulamenta o teste em 29/10/2026, mas ele ainda não foi publicado no Diário da República (consulta de 10/11/2026). Estas questões treinam os temas que a lei cita. Não são as perguntas oficiais.</p>
+      <p><b>Quem vai precisar do teste:</b></p>
+      <ul>
+        <li>quem pede a nacionalidade por tempo de residência (art. 6.º, n.º 1, alíneas c e d);</li>
+        <li>netos de portugueses (art. 1.º, n.º 1, alínea d), que pelo n.º 3 também precisam cumprir essas alíneas;</li>
+        <li>brasileiros também: a lei presume só o conhecimento da língua (art. 6.º, n.º 10), não o de cultura, história, símbolos, direitos e deveres.</li>
+      </ul>
+      <p>Fonte: <a href="https://diariodarepublica.pt/dr/detalhe/lei-organica/1-2026-1123539996" rel="noopener">Lei Orgânica n.º 1/2026, no Diário da República</a>.</p>
+    </section>
+
+    <ol class="questoes">
+      <li class="questao" id="q1" data-certa="B">
+        <div class="cabeca"><span class="num">Questão 1 de 15</span><span class="chip">Símbolos nacionais</span></div>
+        <p class="enunciado">Segundo a Constituição, a Bandeira Nacional é a que foi adotada por quem?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Pelo reino de D. Afonso Henriques, reconhecido pelo Papa em 1179</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Pela República instaurada pela Revolução de 5 de Outubro de 1910</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Pelo Movimento das Forças Armadas, em 25 de Abril de 1974</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Pela Assembleia Constituinte que aprovou a Constituição em 1976</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>B) Pela República instaurada pela Revolução de 5 de Outubro de 1910</b></p>
+            <p>O art. 11.º, n.º 1, diz que a Bandeira Nacional, “símbolo da soberania da República, da independência, unidade e integridade de Portugal”, é “a adotada pela República instaurada pela Revolução de 5 de Outubro de 1910”.</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>A</b><span>1179 é o ano em que o Papa reconheceu o reino (bula Manifestis Probatum). A Constituição liga a bandeira de hoje à República de 1910.</span></li>
+              <li><b>C</b><span>O 25 de Abril derrubou o regime anterior (preâmbulo da Constituição), mas a Constituição não diz que a bandeira foi adotada nessa data.</span></li>
+              <li><b>D</b><span>A Assembleia Constituinte de 1976 aprovou a Constituição. A bandeira que a Constituição consagra é a de 1910.</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx" rel="noopener">Constituição, art. 11.º, n.º 1</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q2" data-certa="A">
+        <div class="cabeca"><span class="num">Questão 2 de 15</span><span class="chip">Símbolos nacionais</span></div>
+        <p class="enunciado">Como é a Bandeira Nacional?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Dividida na vertical em verde-escuro e vermelho, com o verde do lado do mastro</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Dividida na horizontal em verde-escuro e vermelho, com o verde na parte de cima</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Dividida na vertical em verde-escuro e vermelho, com o vermelho do lado do mastro</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Dividida em três faixas verticais iguais: verde, amarelo e vermelho</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>A) Dividida na vertical em verde-escuro e vermelho, com o verde do lado do mastro</b></p>
+            <p>O portal do Governo descreve a bandeira assim: dividida verticalmente em duas cores, verde-escuro e vermelho, com o verde do lado da tralha (o mastro). No centro, sobre a união das cores, fica o escudo das armas nacionais, orlado de branco, sobre a esfera armilar amarela avivada de negro.</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>B</b><span>A divisão é vertical, não horizontal.</span></li>
+              <li><b>C</b><span>As cores estão certas, mas o lado está trocado: o verde fica junto ao mastro.</span></li>
+              <li><b>D</b><span>São só duas cores de fundo. O amarelo aparece apenas na esfera armilar, no centro.</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://portugal.gov.pt/pt/gc24/portugal/a-democracia-portuguesa" rel="noopener">Portal do Governo, Símbolos nacionais</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q3" data-certa="C">
+        <div class="cabeca"><span class="num">Questão 3 de 15</span><span class="chip">Símbolos nacionais</span></div>
+        <p class="enunciado">Segundo a Constituição, qual é o nome do Hino Nacional?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>“Heróis do Mar”</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>“Hino da Independência”</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>“A Portuguesa”</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>“Hino da República”</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>C) “A Portuguesa”</b></p>
+            <p>O art. 11.º, n.º 2, diz: “O Hino Nacional é A Portuguesa.” A música é de Alfredo Keil e a letra de Henrique Lopes de Mendonça (portal do Governo). O mesmo artigo, no n.º 3, diz que a língua oficial é o português.</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>A</b><span>“Heróis do mar” são as primeiras palavras da letra, não o nome do hino. É a pegadinha mais comum.</span></li>
+              <li><b>B</b><span>Não é o nome que a Constituição dá ao hino.</span></li>
+              <li><b>D</b><span>Também não é. O hino da República Portuguesa chama-se “A Portuguesa”.</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx" rel="noopener">Constituição, art. 11.º, n.os 2 e 3</a> · <a href="https://portugal.gov.pt/pt/gc24/portugal/a-democracia-portuguesa" rel="noopener">Portal do Governo, Símbolos nacionais</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q4" data-certa="D">
+        <div class="cabeca"><span class="num">Questão 4 de 15</span><span class="chip">História</span></div>
+        <p class="enunciado">Em 1179, qual documento reconheceu Portugal como reino e D. Afonso Henriques como rei? O original está guardado na Torre do Tombo.</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>O decreto da Assembleia Constituinte que proclamou o hino nacional</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>O Tratado de Adesão de Portugal às Comunidades Europeias</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>A Constituição aprovada pela Assembleia Constituinte</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>A bula Manifestis Probatum, do Papa Alexandre III</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>D) A bula Manifestis Probatum, do Papa Alexandre III</b></p>
+            <p>Segundo o Arquivo Nacional da Torre do Tombo, na bula Manifestis Probatum, de 23 de maio de 1179, o Papa Alexandre III reconhece, de direito, a independência de Portugal e o título de rei a D. Afonso Henriques. A Torre do Tombo a chama de “certidão de nascimento” de Portugal.</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>A</b><span>A Assembleia Constituinte que proclamou “A Portuguesa” como hino é de 1911 (portal do Governo), mais de 700 anos depois.</span></li>
+              <li><b>B</b><span>O Tratado de Adesão foi assinado em 12 de junho de 1985.</span></li>
+              <li><b>C</b><span>A Constituição foi aprovada em 2 de abril de 1976.</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://antt.dglab.gov.pt/wp-content/uploads/sites/17/2016/05/Guardar-memorias-abrir-caminhos-ANTT.pdf" rel="noopener">Arquivo Nacional da Torre do Tombo</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q5" data-certa="A">
+        <div class="cabeca"><span class="num">Questão 5 de 15</span><span class="chip">História</span></div>
+        <p class="enunciado">Segundo o preâmbulo da Constituição, o que aconteceu em 25 de Abril de 1974?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>O Movimento das Forças Armadas derrubou o regime fascista</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Foi proclamada a República e adotada a Bandeira Nacional</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Portugal assinou o Tratado de Adesão às Comunidades Europeias</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>A Assembleia Constituinte aprovou e decretou a Constituição</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>A) O Movimento das Forças Armadas derrubou o regime fascista</b></p>
+            <p>O preâmbulo começa assim: “A 25 de Abril de 1974, o Movimento das Forças Armadas, coroando a longa resistência do povo português e interpretando os seus sentimentos profundos, derrubou o regime fascista.” O 25 de abril também é feriado obrigatório (Código do Trabalho, art. 234.º).</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>B</b><span>A República foi instaurada pela Revolução de 5 de Outubro de 1910 (art. 11.º).</span></li>
+              <li><b>C</b><span>O Tratado de Adesão é de 12 de junho de 1985.</span></li>
+              <li><b>D</b><span>A Constituição foi aprovada em 2 de abril de 1976.</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx" rel="noopener">Constituição, preâmbulo</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q6" data-certa="C">
+        <div class="cabeca"><span class="num">Questão 6 de 15</span><span class="chip">História</span></div>
+        <p class="enunciado">Quem aprovou a Constituição da República Portuguesa, e quando?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>O Movimento das Forças Armadas, em 25 de abril de 1974</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>A Assembleia da República, em 5 de outubro de 1910</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>A Assembleia Constituinte, em 2 de abril de 1976</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>O Presidente da República, em 1 de janeiro de 1986</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>C) A Assembleia Constituinte, em 2 de abril de 1976</b></p>
+            <p>O preâmbulo termina dizendo que “A Assembleia Constituinte, reunida na sessão plenária de 2 de Abril de 1976, aprova e decreta a seguinte Constituição da República Portuguesa”. A Constituição em vigor é essa, com revisões. O texto no site do Parlamento é o da VII revisão constitucional (2005).</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>A</b><span>Em 1974 o MFA derrubou o regime. A Constituição veio depois, da Assembleia Constituinte.</span></li>
+              <li><b>B</b><span>1910 é o ano da revolução que instaurou a República. A Assembleia da República é um órgão de soberania previsto na Constituição (arts. 110.º e 147.º) e não aprovou a Constituição.</span></li>
+              <li><b>D</b><span>1º de janeiro de 1986 é a entrada de Portugal nas Comunidades Europeias. O Presidente promulga leis e decretos-leis (art. 134.º, b), mas não aprovou a Constituição.</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx" rel="noopener">Constituição, preâmbulo</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q7" data-certa="B">
+        <div class="cabeca"><span class="num">Questão 7 de 15</span><span class="chip">História</span></div>
+        <p class="enunciado">Desde quando Portugal é membro das Comunidades Europeias (hoje União Europeia)?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Desde 12 de junho de 1985</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Desde 1 de janeiro de 1986</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Desde 2 de abril de 1976</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Desde 25 de abril de 1974</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>B) Desde 1 de janeiro de 1986</b></p>
+            <p>Segundo a Agência para o Desenvolvimento e Coesão, Portugal assinou o Tratado de Adesão em 12 de junho de 1985, no Mosteiro dos Jerónimos, em Lisboa. A adesão começou a valer em 1º de janeiro de 1986, junto com a Espanha.</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>A</b><span>É a data da assinatura do tratado, não a da entrada. É a pegadinha desta questão.</span></li>
+              <li><b>C</b><span>É a data em que a Constituição foi aprovada.</span></li>
+              <li><b>D</b><span>É a data da revolução descrita no preâmbulo da Constituição.</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://www.adcoesao.pt/wp-content/uploads/40aniversario.pdf" rel="noopener">Agência para o Desenvolvimento e Coesão, 40 anos na UE</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q8" data-certa="D">
+        <div class="cabeca"><span class="num">Questão 8 de 15</span><span class="chip">Cultura</span></div>
+        <p class="enunciado">Qual destas datas é feriado obrigatório em Portugal?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>7 de setembro</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>15 de novembro</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>21 de abril</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>10 de junho</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>D) 10 de junho</b></p>
+            <p>O art. 234.º, n.º 1, do Código do Trabalho lista os feriados obrigatórios: 1º de janeiro, Sexta-Feira Santa, Domingo de Páscoa, 25 de abril, 1º de maio, Corpo de Deus, 10 de junho, 15 de agosto, 5 de outubro, 1º de novembro e 1º, 8 e 25 de dezembro.</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>A</b><span>Não está na lista do art. 234.º. É feriado nacional no Brasil (Independência).</span></li>
+              <li><b>B</b><span>Não está na lista do art. 234.º. É feriado nacional no Brasil (Proclamação da República).</span></li>
+              <li><b>C</b><span>Não está na lista do art. 234.º. É feriado nacional no Brasil (Tiradentes).</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?artigo_id=1047A0234&amp;nid=1047&amp;tabela=leis" rel="noopener">Código do Trabalho, art. 234.º</a> · <a href="https://www.in.gov.br/web/dou/-/portaria-mgi-n-11.460-de-29-de-dezembro-de-2025-678388627" rel="noopener">Brasil: Portaria MGI n.º 11.460/2025</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q9" data-certa="C">
+        <div class="cabeca"><span class="num">Questão 9 de 15</span><span class="chip">Organização do Estado</span></div>
+        <p class="enunciado">Segundo a Constituição, quais são os órgãos de soberania?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Presidente da República, Assembleia da República, Governo e Forças Armadas</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Presidente da República, Governo, Tribunais e Câmaras Municipais</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Presidente da República, Assembleia da República, Governo e Tribunais</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Assembleia da República, Governo, Tribunais e Banco de Portugal</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>C) Presidente da República, Assembleia da República, Governo e Tribunais</b></p>
+            <p>O art. 110.º, n.º 1, diz: “São órgãos de soberania o Presidente da República, a Assembleia da República, o Governo e os Tribunais.” Os tribunais administram a justiça “em nome do povo” (art. 202.º, n.º 1).</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>A</b><span>As Forças Armadas não estão na lista do art. 110.º, e os Tribunais ficaram de fora.</span></li>
+              <li><b>B</b><span>As Câmaras Municipais não estão na lista, e a Assembleia da República ficou de fora.</span></li>
+              <li><b>D</b><span>O Banco de Portugal não está na lista, e o Presidente da República ficou de fora.</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx" rel="noopener">Constituição, arts. 110.º e 202.º</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q10" data-certa="A">
+        <div class="cabeca"><span class="num">Questão 10 de 15</span><span class="chip">Organização do Estado</span></div>
+        <p class="enunciado">Como é escolhido o Presidente da República, e quanto dura o mandato?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>É eleito por sufrágio universal, direto e secreto, com mandato de 5 anos</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>É eleito pelos deputados da Assembleia da República, com mandato de 4 anos</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>É eleito por sufrágio universal, direto e secreto, com mandato de 4 anos</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>É nomeado pelo Governo depois das eleições, com mandato de 5 anos</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>A) É eleito por sufrágio universal, direto e secreto, com mandato de 5 anos</b></p>
+            <p>O Presidente é “eleito por sufrágio universal, direto e secreto” (art. 121.º, n.º 1). O mandato “tem a duração de cinco anos e termina com a posse do novo Presidente eleito” (art. 128.º, n.º 1).</p>
+            <p>Um detalhe que interessa a quem se naturaliza: só podem ser candidatos os cidadãos eleitores portugueses de origem, maiores de 35 anos (art. 122.º).</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>B</b><span>Os deputados não escolhem o Presidente. A eleição é direta, e o mandato é de 5 anos.</span></li>
+              <li><b>C</b><span>A forma de eleição está certa, mas o mandato é de 5 anos, não de 4.</span></li>
+              <li><b>D</b><span>É o contrário: é o Presidente quem nomeia o Primeiro-Ministro (art. 187.º).</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx" rel="noopener">Constituição, arts. 121.º, 122.º e 128.º</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q11" data-certa="B">
+        <div class="cabeca"><span class="num">Questão 11 de 15</span><span class="chip">Organização do Estado</span></div>
+        <p class="enunciado">Segundo a Constituição, quantos deputados tem a Assembleia da República?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Exatamente 180 deputados</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>No mínimo 180 e no máximo 230</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Entre 100 e 150 deputados</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Exatamente 300 deputados</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>B) No mínimo 180 e no máximo 230</b></p>
+            <p>O art. 148.º diz que a Assembleia “tem o mínimo de cento e oitenta e o máximo de duzentos e trinta Deputados”, nos termos da lei eleitoral. Os deputados são eleitos por círculos eleitorais definidos na lei (art. 149.º, n.º 1), e só podem concorrer em listas de partidos (portal do Governo).</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>A</b><span>180 é só o mínimo.</span></li>
+              <li><b>C</b><span>Fica abaixo do mínimo de 180.</span></li>
+              <li><b>D</b><span>Passa do máximo de 230.</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx" rel="noopener">Constituição, arts. 148.º e 149.º</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q12" data-certa="D">
+        <div class="cabeca"><span class="num">Questão 12 de 15</span><span class="chip">Organização do Estado</span></div>
+        <p class="enunciado">Quem nomeia o Primeiro-Ministro?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Os eleitores, numa eleição direta só para escolher o Primeiro-Ministro</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>A Assembleia da República, numa votação secreta entre os deputados</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>O Tribunal Constitucional, depois de validar as eleições legislativas</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>O Presidente da República, tendo em conta os resultados eleitorais</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>D) O Presidente da República, tendo em conta os resultados eleitorais</b></p>
+            <p>“O Primeiro-Ministro é nomeado pelo Presidente da República, ouvidos os partidos representados na Assembleia da República e tendo em conta os resultados eleitorais” (art. 187.º, n.º 1). O Governo é “o órgão de condução da política geral do país e o órgão superior da administração pública” (art. 182.º).</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>A</b><span>A Constituição não prevê eleição direta para Primeiro-Ministro. O Presidente leva em conta o resultado das eleições para a Assembleia.</span></li>
+              <li><b>B</b><span>A Assembleia não nomeia o Primeiro-Ministro. Quem nomeia é o Presidente, depois de ouvir os partidos.</span></li>
+              <li><b>C</b><span>O Tribunal Constitucional administra a justiça em matérias jurídico-constitucionais (art. 221.º) e não nomeia o Governo.</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx" rel="noopener">Constituição, arts. 182.º, 187.º e 221.º</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q13" data-certa="A">
+        <div class="cabeca"><span class="num">Questão 13 de 15</span><span class="chip">Direitos e deveres</span></div>
+        <p class="enunciado">Segundo a Constituição, o direito de voto (sufrágio):</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>é de todos os cidadãos maiores de 18 anos, é pessoal e é um dever cívico</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>começa aos 16 anos e só passa a ser um dever cívico a partir dos 18</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>pode ser exercido por outra pessoa, desde que tenha procuração</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>existe só para os cidadãos portugueses de origem, não para os naturalizados</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>A) é de todos os cidadãos maiores de 18 anos, é pessoal e é um dever cívico</b></p>
+            <p>Art. 49.º: “Têm direito de sufrágio todos os cidadãos maiores de dezoito anos, ressalvadas as incapacidades previstas na lei geral” (n.º 1), e “O exercício do direito de sufrágio é pessoal e constitui um dever cívico” (n.º 2).</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>B</b><span>A Constituição fala em maiores de dezoito anos.</span></li>
+              <li><b>C</b><span>O exercício do voto “é pessoal”.</span></li>
+              <li><b>D</b><span>O art. 49.º fala em “todos os cidadãos”. A exigência de ser português de origem é para ser candidato a Presidente (art. 122.º), não para votar.</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx" rel="noopener">Constituição, art. 49.º</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q14" data-certa="C">
+        <div class="cabeca"><span class="num">Questão 14 de 15</span><span class="chip">Direitos e deveres</span></div>
+        <p class="enunciado">Um estrangeiro que mora em Portugal, segundo o art. 15.º da Constituição:</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>só passa a ter direitos fundamentais depois de obter a nacionalidade portuguesa</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>tem os mesmos direitos do cidadão português, mas não está sujeito aos mesmos deveres</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>tem os direitos e deveres do cidadão português, com exceções como os direitos políticos</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>está sujeito aos deveres do cidadão português, mas não tem nenhum direito garantido</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>C) tem os direitos e deveres do cidadão português, com exceções como os direitos políticos</b></p>
+            <p>Art. 15.º, n.º 1: os estrangeiros e os apátridas que se encontrem ou residam em Portugal “gozam dos direitos e estão sujeitos aos deveres do cidadão português”. O n.º 2 traz as exceções, a começar pelos direitos políticos.</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>A</b><span>O art. 15.º garante direitos a quem se encontra ou reside em Portugal, sem exigir a nacionalidade.</span></li>
+              <li><b>B</b><span>O mesmo número fala em direitos e deveres.</span></li>
+              <li><b>D</b><span>Pelo mesmo motivo: o artigo garante direitos, com as exceções do n.º 2.</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx" rel="noopener">Constituição, art. 15.º</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="questao" id="q15" data-certa="B">
+        <div class="cabeca"><span class="num">Questão 15 de 15</span><span class="chip">Direitos e deveres</span></div>
+        <p class="enunciado">O que diz a Constituição sobre a pena de morte?</p>
+        <ul class="opcoes">
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Só pode ser aplicada em tempo de guerra</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>É proibida em qualquer caso</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Pode ser aplicada por decisão do Tribunal Constitucional</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Depende de aprovação em referendo nacional</span></button></li>
+        </ul>
+        <p class="veredito" hidden></p>
+        <details>
+          <summary>Ver resposta e explicação</summary>
+          <div class="explica">
+            <p class="gabarito">Resposta certa: <b>B) É proibida em qualquer caso</b></p>
+            <p>O art. 24.º, sobre o direito à vida, diz no n.º 2: “Em caso algum haverá pena de morte.”</p>
+            <p class="sub">Por que as outras estão erradas</p>
+            <ul class="porque">
+              <li><b>A</b><span>“Em caso algum” não deixa exceção, nem em guerra.</span></li>
+              <li><b>C</b><span>Nenhum tribunal pode aplicá-la, porque a proibição é absoluta.</span></li>
+              <li><b>D</b><span>A Constituição não condiciona a proibição a referendo.</span></li>
+            </ul>
+            <p class="fonte">Fonte oficial: <a href="https://www.parlamento.pt/Legislacao/Paginas/ConstituicaoRepublicaPortuguesa.aspx" rel="noopener">Constituição, art. 24.º, n.º 2</a></p>
+          </div>
+        </details>
+      </li>
+    </ol>
+
+    <section class="placar" aria-live="polite">
+      <p class="total" id="total">0 de 15 respondidas</p>
+      <p id="nota" hidden></p>
+    </section>
+
+    <section class="cta">
+      <h2>Quando o formato oficial sair</h2>
+      <p>Esta página será atualizada com o formato da prova (número de questões, tempo e nota mínima) assim que o regulamento for publicado no Diário da República. Enquanto isso, o texto da lei está no site oficial.</p>
+      <a class="botao" href="https://diariodarepublica.pt/dr/detalhe/lei-organica/1-2026-1123539996" rel="noopener">Ler a Lei da Nacionalidade no Diário da República</a>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Material independente e não oficial, sem ligação com o IRN, a AIMA ou o Governo de Portugal. Não é aconselhamento jurídico.</p>
+    <p>Questões originais, escritas com apoio de inteligência artificial a partir de textos oficiais (Constituição, Lei da Nacionalidade e outros, com link em cada resposta), conferidos em 10/11/2026.</p>
+    <p>Esta página não usa cookies nem rastreamento.</p>
+  </footer>
+</div>
+<script type="application/json" id="textos">{"acertou": "Você acertou.", "errou": "Não foi dessa vez.", "respondidas": "{X} de {T} respondidas", "placar": "Você acertou {X} de {T}", "acima": "Bom resultado. A nota mínima da prova oficial ainda não foi publicada.", "abaixo": "Releia as explicações das que errou. A nota mínima da prova oficial ainda não foi publicada."}</script>
+<script>
+(function () {
+  document.documentElement.classList.remove("sem-js");
+  var T = JSON.parse(document.getElementById("textos").textContent);
+  var questoes = Array.prototype.slice.call(document.querySelectorAll(".questao"));
+  var total = document.getElementById("total"), nota = document.getElementById("nota");
+  var respondidas = 0, acertos = 0;
+  function preencher(s, x) { return s.replace("{X}", x).replace("{T}", questoes.length); }
+  questoes.forEach(function (q) {
+    var opcoes = Array.prototype.slice.call(q.querySelectorAll(".opcao"));
+    opcoes.forEach(function (b) {
+      b.addEventListener("click", function () {
+        if (q.classList.contains("respondida")) return;
+        q.classList.add("respondida");
+        var ok = b.getAttribute("data-letra") === q.getAttribute("data-certa");
+        respondidas++; if (ok) acertos++;
+        opcoes.forEach(function (o) {
+          o.setAttribute("aria-disabled", "true");
+          if (o.getAttribute("data-letra") === q.getAttribute("data-certa")) o.classList.add("certa");
+        });
+        if (!ok) b.classList.add("errada");
+        b.setAttribute("aria-pressed", "true");
+        var v = q.querySelector(".veredito");
+        v.textContent = ok ? T.acertou : T.errou;
+        v.className = "veredito " + (ok ? "ok" : "bad");
+        v.hidden = false;
+        q.querySelector("details").open = true;
+        if (respondidas === questoes.length) {
+          total.textContent = preencher(T.placar, acertos);
+          nota.textContent = acertos / questoes.length >= 0.65 ? T.acima : T.abaixo;
+          nota.hidden = false;
+        } else {
+          total.textContent = preencher(T.respondidas, respondidas);
+        }
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
