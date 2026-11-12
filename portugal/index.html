@@ -11,142 +11,108 @@
 <meta property="og:locale" content="pt_BR">
 <link rel="canonical" href="https://simulado-explicado.github.io/portugal/">
 <meta property="og:url" content="https://simulado-explicado.github.io/portugal/">
-<meta name="theme-color" content="#0f4c4d">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Crect width='800' height='800' rx='160' fill='%230f4c4d'/%3E%3Cpath d='M190 250a70 70 0 0 1 70-70h280a70 70 0 0 1 70 70v200a70 70 0 0 1-70 70H390l-90 80 14-80h-54a70 70 0 0 1-70-70z' fill='%23f6b73c'/%3E%3Cpath d='M300 350l66 70 136-150' stroke='%230f4c4d' stroke-width='56' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#f6f5f1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ffffff'/%3E%3Cpath d='M33 7c13 1 23 11 23 24 0 14-11 25-25 25C17 56 7 46 8 32 9 20 19 9 34 9' fill='none' stroke='%231c2738' stroke-width='4.5' stroke-linecap='round'/%3E%3Cpath d='M20 33l9 9 17-20' fill='none' stroke='%231f4d3a' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <style>
 :root {
-  --bg: #f6f4ef; --surface: #ffffff; --ink: #1b2425; --muted: #586566; --line: #ddd8cc;
-  --accent: #0f4c4d; --accent-ink: #ffffff; --accent-soft: #e2eded; --amber: #f6b73c; --amber-soft: #fdf1d8;
-  --ok: #1d7347; --ok-bg: #e5f2ea; --bad: #b02a20; --bad-bg: #fbe8e5;
-  --f-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --f-mono: ui-monospace, "SF Mono", Consolas, "Liberation Mono", monospace;
+  --fundo: #f6f5f1; --folha: #ffffff; --tinta: #1c2738; --tinta-2: #4a5468; --linha: #dcd8cd;
+  --destaque: #1f4d3a; --destaque-fundo: #e8f0eb; --aviso: #8a5a00; --aviso-fundo: #fbf5e6;
+  --verde: #1f6b43; --verde-fundo: #e7f2eb; --vermelho: #a5302a; --vermelho-fundo: #f9e8e6;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0e1515; --surface: #162021; --ink: #e6eceb; --muted: #9babab; --line: #2a3839;
-    --accent: #7cc9c6; --accent-ink: #0e1515; --accent-soft: #1b3132; --amber: #f6b73c; --amber-soft: #2e2716;
-    --ok: #63c38f; --ok-bg: #142a1e; --bad: #f08b80; --bad-bg: #331a18;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0e1515; --surface: #162021; --ink: #e6eceb; --muted: #9babab; --line: #2a3839;
-  --accent: #7cc9c6; --accent-ink: #0e1515; --accent-soft: #1b3132; --amber: #f6b73c; --amber-soft: #2e2716;
-  --ok: #63c38f; --ok-bg: #142a1e; --bad: #f08b80; --bad-bg: #331a18;
-  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-sans); font-size: 17px; line-height: 1.55; }
-a { color: var(--accent); }
-.pagina { max-width: 720px; margin: 0 auto; padding: 16px 16px 48px; display: grid; gap: 28px; }
-.conteudo { display: grid; gap: 28px; min-width: 0; }
+body { margin: 0; background: var(--fundo); color: var(--tinta); font-family: var(--sans); font-size: 17px; line-height: 1.6; }
+a { color: var(--destaque); text-underline-offset: 3px; }
+.pagina { max-width: 720px; margin: 0 auto; padding: 18px 18px 56px; }
 
-.barra { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-.marca { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -.01em; }
-.marca svg { width: 34px; height: 34px; flex: none; }
-.idioma { font-size: 15px; font-weight: 600; }
+.topo { display: flex; align-items: center; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid var(--linha); }
+.nome { display: inline-flex; align-items: center; gap: 10px; color: var(--tinta); text-decoration: none; font-family: var(--serif); font-size: 19px; font-weight: 700; }
+.logo { width: 34px; height: 34px; flex: none; }
 
-.abertura { display: grid; gap: 12px; }
-.rotulo { margin: 0; font-family: var(--f-mono); font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-h1 { margin: 0; font-size: clamp(26px, 6vw, 36px); line-height: 1.15; letter-spacing: -.02em; text-wrap: balance; }
-.intro { margin: 0; color: var(--muted); max-width: 60ch; }
-.fatos { margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
-.fatos li { font-size: 14px; background: var(--amber-soft); border-radius: 999px; padding: 4px 12px; }
+.abertura { margin: 30px 0 26px; }
+.contexto { margin: 0 0 10px; font-size: 15px; color: var(--tinta-2); }
+h1 { margin: 0 0 14px; font-family: var(--serif); font-size: clamp(28px, 5.6vw, 38px); line-height: 1.15; font-weight: 700; text-wrap: balance; }
+.intro { margin: 0 0 8px; color: var(--tinta-2); max-width: 62ch; }
+.resumo { margin: 0; font-size: 15px; color: var(--tinta-2); }
 
-.questoes { margin: 0; padding: 0; list-style: none; display: grid; gap: 20px; }
-.questao { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px; display: grid; gap: 14px; min-width: 0; scroll-margin-top: 16px; }
-.cabeca { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 12px; }
-.num { font-family: var(--f-mono); font-size: 13px; font-weight: 600; color: var(--muted); }
-.chip { font-family: var(--f-mono); font-size: 12px; font-weight: 500; color: var(--accent); background: var(--accent-soft); padding: 3px 8px; border-radius: 5px; }
+.aviso { background: var(--folha); border: 1px solid var(--linha); border-left: 4px solid var(--aviso); border-radius: 4px; padding: 18px 20px; display: grid; gap: 10px; font-size: 16px; margin-bottom: 34px; }
+.aviso p { margin: 0; }
+.aviso .titulo { font-weight: 700; color: var(--aviso); }
+.aviso ul { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.aviso .fonte-aviso { font-size: 14.5px; color: var(--tinta-2); }
+
+.questoes { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+.questao { background: var(--folha); border: 1px solid var(--linha); border-radius: 4px; padding: 22px 22px 20px; scroll-margin-top: 12px; display: grid; gap: 14px; min-width: 0; }
+.cabeca { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 12px; }
+.num { font-size: 14px; color: var(--tinta-2); }
+.chip { font-size: 14px; font-weight: 600; color: var(--destaque); }
 .enunciado { margin: 0; font-size: 18px; font-weight: 500; }
-.opcoes { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
-.opcao {
-  width: 100%; display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; text-align: left;
-  font: inherit; font-size: 16px; color: var(--ink); background: var(--surface);
-  border: 1.5px solid var(--line); border-radius: 8px; padding: 11px 14px; cursor: pointer;
-}
-.opcao .letra {
-  width: 26px; height: 26px; display: grid; place-items: center; border-radius: 6px; border: 1px solid var(--line);
-  font-family: var(--f-mono); font-size: 13px; font-weight: 600; color: var(--muted);
-}
-.sem-js .opcao { cursor: default; }
-.opcao:hover:not([aria-disabled]) { border-color: var(--accent); }
-.opcao[aria-disabled] { cursor: default; }
-.opcao.certa { border-color: var(--ok); background: var(--ok-bg); }
-.opcao.certa .letra { background: var(--ok); border-color: var(--ok); color: var(--surface); }
-.opcao.errada { border-color: var(--bad); background: var(--bad-bg); }
-.opcao.errada .letra { background: var(--bad); border-color: var(--bad); color: var(--surface); }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.opcoes { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.opcao { width: 100%; display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: start; text-align: left; font: inherit; font-size: 16.5px; color: var(--tinta); background: var(--folha); border: 1px solid var(--linha); border-radius: 4px; padding: 10px 12px; cursor: pointer; }
+.opcao .letra { width: 26px; height: 26px; display: grid; place-items: center; border-radius: 50%; border: 1.5px solid var(--linha); font-size: 13.5px; font-weight: 700; color: var(--tinta-2); }
+.opcao:hover:not([aria-disabled]) { border-color: var(--destaque); }
+.sem-js .opcao, .opcao[aria-disabled] { cursor: default; }
+.opcao.certa { border-color: var(--verde); background: var(--verde-fundo); }
+.opcao.certa .letra { background: var(--verde); border-color: var(--verde); color: #fff; }
+.opcao.errada { border-color: var(--vermelho); background: var(--vermelho-fundo); }
+.opcao.errada .letra { background: var(--vermelho); border-color: var(--vermelho); color: #fff; }
+:focus-visible { outline: 2px solid var(--destaque); outline-offset: 2px; }
 
 .veredito { margin: 0; font-weight: 700; }
-.veredito.ok { color: var(--ok); }
-.veredito.bad { color: var(--bad); }
-details { border-top: 1px solid var(--line); padding-top: 12px; }
-summary { cursor: pointer; font-weight: 600; color: var(--accent); }
-.explica { display: grid; gap: 10px; margin-top: 12px; }
+.veredito.ok { color: var(--verde); }
+.veredito.bad { color: var(--vermelho); }
+details { border-top: 1px solid var(--linha); padding-top: 12px; }
+summary { cursor: pointer; font-weight: 600; color: var(--destaque); }
+.explica { margin-top: 12px; display: grid; gap: 10px; }
 .explica p { margin: 0; }
-.gabarito b { color: var(--ok); }
-.sub { font-weight: 600; }
-.porque { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; color: var(--muted); font-size: 15px; }
-.porque li { display: grid; grid-template-columns: 24px 1fr; gap: 6px; }
-.porque b { font-family: var(--f-mono); }
+.gabarito b { color: var(--verde); }
+.sub { font-weight: 700; }
+.porque { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; font-size: 15.5px; color: var(--tinta-2); }
+.porque li { display: grid; grid-template-columns: 22px 1fr; gap: 6px; }
+.porque b { color: var(--tinta); }
+.fonte { margin-top: 2px !important; padding: 10px 12px; background: var(--fundo); border-radius: 4px; font-size: 14.5px; color: var(--tinta-2); }
 
-.placar { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: grid; gap: 4px; }
-.placar .total { margin: 0; font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
-.placar p { margin: 0; color: var(--muted); }
+.placar { margin: 22px 0 30px; background: var(--folha); border: 1px solid var(--linha); border-radius: 4px; padding: 18px 20px; }
+.placar .total { margin: 0; font-family: var(--serif); font-size: 24px; font-weight: 700; color: var(--tinta); }
+.placar p { margin: 4px 0 0; color: var(--tinta-2); }
 
-.cta { background: var(--accent); color: var(--accent-ink); border-radius: 14px; padding: 24px 20px; display: grid; gap: 12px; }
-.cta h2 { margin: 0; font-size: 24px; line-height: 1.2; letter-spacing: -.01em; }
-.cta p { margin: 0; opacity: .92; }
-.botao {
-  justify-self: start; display: inline-block; text-decoration: none; font-weight: 700; font-size: 16px;
-  background: var(--amber); color: #1b2425; border-radius: 9px; padding: 12px 18px;
-}
-.botao:hover { filter: brightness(1.05); }
-.cupom { border-top: 1px solid color-mix(in srgb, var(--accent-ink) 25%, transparent); padding-top: 12px; display: grid; gap: 10px; }
-.botao.claro { background: transparent; color: var(--accent-ink); border: 1.5px solid currentColor; }
+.formato { background: var(--folha); border: 1px solid var(--linha); border-top: 4px solid var(--destaque); border-radius: 4px; padding: 22px 22px; }
+.formato h2 { margin: 0 0 8px; font-family: var(--serif); font-size: 23px; line-height: 1.25; }
+.formato p { margin: 0 0 16px; }
+.botao { display: inline-block; text-decoration: none; font-weight: 600; color: var(--destaque); border: 1.5px solid var(--destaque); border-radius: 4px; padding: 10px 16px; }
+.botao:hover { background: var(--destaque-fundo); }
 
-.rodape { display: grid; gap: 6px; font-size: 13px; color: var(--muted); }
-.rodape p { margin: 0; max-width: 62ch; }
-@media (prefers-reduced-motion: no-preference) {
-  .veredito { animation: entra .18s ease-out; }
-  @keyframes entra { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
-}
-
-.aviso { background: var(--amber-soft); border-radius: 12px; padding: 16px 18px; display: grid; gap: 8px; font-size: 15px; }
-.aviso p { margin: 0; }
-.aviso ul { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
-.fonte { font-size: 14px; color: var(--muted); }
+.rodape { margin-top: 36px; padding-top: 14px; border-top: 1px solid var(--linha); font-size: 13.5px; color: var(--tinta-2); display: grid; gap: 4px; }
+.rodape p { margin: 0; }
 </style>
 </head>
 <body>
 <div class="pagina">
-  <header class="barra">
-    <a class="marca" href="../">
-      <svg viewBox="0 0 800 800" aria-hidden="true"><rect width="800" height="800" rx="160" fill="#0f4c4d"/><path d="M190 250a70 70 0 0 1 70-70h280a70 70 0 0 1 70 70v200a70 70 0 0 1-70 70H390l-90 80 14-80h-54a70 70 0 0 1-70-70z" fill="#f6b73c"/><path d="M300 350l66 70 136-150" stroke="#0f4c4d" stroke-width="56" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Simulado Explicado
-    </a>
+  <header class="topo">
+    <a class="nome" href="../"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><path d="M33 7c13 1 23 11 23 24 0 14-11 25-25 25C17 56 7 46 8 32 9 20 19 9 34 9" fill="none" stroke="#1c2738" stroke-width="3.6" stroke-linecap="round"/><path d="M20 33l9 9 17-20" fill="none" stroke="#1f4d3a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>Simulado Explicado</a>
   </header>
 
-  <main class="conteudo">
+  <main>
     <section class="abertura">
-      <p class="rotulo">Grátis · sem cadastro</p>
+      <p class="contexto">Nacionalidade portuguesa · Lei Orgânica n.º&nbsp;1/2026</p>
       <h1>15 questões comentadas para o teste de nacionalidade portuguesa</h1>
       <p class="intro">Cultura, história, símbolos nacionais, direitos e deveres e organização do Estado: os temas que o art. 6.º da Lei da Nacionalidade exige. Escolha uma alternativa para ver se acertou, por que cada uma das outras está errada e o texto oficial de onde vem a resposta.</p>
-      <ul class="fatos"><li>15 questões</li><li>uns 15 minutos</li><li>link para a lei em cada resposta</li></ul>
+      <p class="resumo">15 questões · uns 15 minutos · gratuito e sem cadastro · link para a lei em cada resposta</p>
     </section>
 
     <section class="aviso">
-      <p><b>O formato oficial da prova ainda não saiu.</b> O Governo aprovou o decreto-lei que regulamenta o teste em 29/10/2026, mas ele ainda não foi publicado no Diário da República (consulta de 10/11/2026). Estas questões treinam os temas que a lei cita. Não são as perguntas oficiais.</p>
+      <p class="titulo">O formato oficial da prova ainda não foi publicado.</p>
+      <p>O Governo aprovou o decreto-lei que regulamenta o teste em 29/10/2026, mas ele ainda não foi promulgado nem publicado no Diário da República (consulta de 12/11/2026). Estas questões treinam os temas que a lei cita. Não são as perguntas oficiais.</p>
       <p><b>Quem vai precisar do teste:</b></p>
       <ul>
         <li>quem pede a nacionalidade por tempo de residência (art. 6.º, n.º 1, alíneas c e d);</li>
         <li>netos de portugueses (art. 1.º, n.º 1, alínea d), que pelo n.º 3 também precisam cumprir essas alíneas;</li>
         <li>brasileiros também: a lei presume só o conhecimento da língua (art. 6.º, n.º 10), não o de cultura, história, símbolos, direitos e deveres.</li>
       </ul>
-      <p>Fonte: <a href="https://diariodarepublica.pt/dr/detalhe/lei-organica/1-2026-1123539996" rel="noopener">Lei Orgânica n.º 1/2026, no Diário da República</a>.</p>
+      <p class="fonte-aviso">Fonte: <a href="https://diariodarepublica.pt/dr/detalhe/lei-organica/1-2026-1123539996" rel="noopener">Lei Orgânica n.º 1/2026, no Diário da República</a>.</p>
     </section>
 
     <ol class="questoes">
@@ -533,7 +499,7 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
       <p id="nota" hidden></p>
     </section>
 
-    <section class="cta">
+    <section class="formato">
       <h2>Quando o formato oficial sair</h2>
       <p>Esta página será atualizada com o formato da prova (número de questões, tempo e nota mínima) assim que o regulamento for publicado no Diário da República. Enquanto isso, o texto da lei está no site oficial.</p>
       <a class="botao" href="https://diariodarepublica.pt/dr/detalhe/lei-organica/1-2026-1123539996" rel="noopener">Ler a Lei da Nacionalidade no Diário da República</a>
