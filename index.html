@@ -16,138 +16,122 @@
 <link rel="alternate" hreflang="x-default" href="https://simulado-explicado.github.io/">
 <meta property="og:url" content="https://simulado-explicado.github.io/">
 <meta property="og:image" content="https://simulado-explicado.github.io/capa.png">
-<meta name="theme-color" content="#0f4c4d">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800'%3E%3Crect width='800' height='800' rx='160' fill='%230f4c4d'/%3E%3Cpath d='M190 250a70 70 0 0 1 70-70h280a70 70 0 0 1 70 70v200a70 70 0 0 1-70 70H390l-90 80 14-80h-54a70 70 0 0 1-70-70z' fill='%23f6b73c'/%3E%3Cpath d='M300 350l66 70 136-150' stroke='%230f4c4d' stroke-width='56' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#fbf8f1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23fbf8f1'/%3E%3Cpath d='M13 37c-2-9 3-19 12-24' fill='none' stroke='%23f5d547' stroke-width='11' stroke-linecap='round'/%3E%3Cpath d='M33 7c13 1 23 11 23 24 0 14-11 25-25 25C17 56 7 46 8 32 9 20 19 9 34 9' fill='none' stroke='%231f2a44' stroke-width='4.5' stroke-linecap='round'/%3E%3Cpath d='M20 33l9 9 17-20' fill='none' stroke='%231f2a44' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <style>
 :root {
-  --bg: #f6f4ef; --surface: #ffffff; --ink: #1b2425; --muted: #586566; --line: #ddd8cc;
-  --accent: #0f4c4d; --accent-ink: #ffffff; --accent-soft: #e2eded; --amber: #f6b73c; --amber-soft: #fdf1d8;
-  --ok: #1d7347; --ok-bg: #e5f2ea; --bad: #b02a20; --bad-bg: #fbe8e5;
-  --f-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --f-mono: ui-monospace, "SF Mono", Consolas, "Liberation Mono", monospace;
+  --papel: #fbf8f1; --folha: #fffdf8; --tinta: #1f2a44; --tinta-2: #4b556e; --linha: #e4dccb;
+  --marca: #f5d547; --marca-2: rgba(245, 213, 71, .55); --margem: #eab0a8;
+  --verde: #2b7a4b; --verde-2: #eaf4ed; --vermelho: #b8372b; --vermelho-2: #fbecea;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0e1515; --surface: #162021; --ink: #e6eceb; --muted: #9babab; --line: #2a3839;
-    --accent: #7cc9c6; --accent-ink: #0e1515; --accent-soft: #1b3132; --amber: #f6b73c; --amber-soft: #2e2716;
-    --ok: #63c38f; --ok-bg: #142a1e; --bad: #f08b80; --bad-bg: #331a18;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0e1515; --surface: #162021; --ink: #e6eceb; --muted: #9babab; --line: #2a3839;
-  --accent: #7cc9c6; --accent-ink: #0e1515; --accent-soft: #1b3132; --amber: #f6b73c; --amber-soft: #2e2716;
-  --ok: #63c38f; --ok-bg: #142a1e; --bad: #f08b80; --bad-bg: #331a18;
-  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-sans); font-size: 17px; line-height: 1.55; }
-a { color: var(--accent); }
-.pagina { max-width: 720px; margin: 0 auto; padding: 16px 16px 48px; display: grid; gap: 28px; }
-.conteudo { display: grid; gap: 28px; min-width: 0; }
+body { margin: 0; background: var(--papel); color: var(--tinta); font-family: var(--sans); font-size: 17px; line-height: 1.6; }
+a { color: var(--tinta); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.pagina { max-width: 700px; margin: 0 auto; padding: 18px 18px 56px; }
 
-.barra { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-.marca { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -.01em; }
-.marca svg { width: 34px; height: 34px; flex: none; }
-.idioma { font-size: 15px; font-weight: 600; }
+.topo { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.nome { display: inline-flex; align-items: center; gap: 10px; color: var(--tinta); text-decoration: none; font-family: var(--serif); font-size: 20px; font-weight: 700; }
+.logo { width: 40px; height: 40px; flex: none; }
+.idioma { font-size: 15px; color: var(--tinta-2); }
 
-.abertura { display: grid; gap: 12px; }
-.rotulo { margin: 0; font-family: var(--f-mono); font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-h1 { margin: 0; font-size: clamp(26px, 6vw, 36px); line-height: 1.15; letter-spacing: -.02em; text-wrap: balance; }
-.intro { margin: 0; color: var(--muted); max-width: 60ch; }
-.fatos { margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
-.fatos li { font-size: 14px; background: var(--amber-soft); border-radius: 999px; padding: 4px 12px; }
+h1 { font-family: var(--serif); font-size: clamp(30px, 6.2vw, 44px); line-height: 1.12; font-weight: 700; letter-spacing: -.01em; margin: 36px 0 16px; text-wrap: balance; }
+.grifo { background: linear-gradient(100deg, transparent 0 1%, var(--marca-2) 2% 97%, transparent 99%); padding: 0 .12em; margin: 0 -.12em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.chamada { margin: 0 0 6px; font-size: 19px; color: var(--tinta-2); max-width: 58ch; }
+.detalhes { margin: 0; font-size: 15px; color: var(--tinta-2); }
 
-.questoes { margin: 0; padding: 0; list-style: none; display: grid; gap: 20px; }
-.questao { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px; display: grid; gap: 14px; min-width: 0; scroll-margin-top: 16px; }
-.cabeca { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 12px; }
-.num { font-family: var(--f-mono); font-size: 13px; font-weight: 600; color: var(--muted); }
-.chip { font-family: var(--f-mono); font-size: 12px; font-weight: 500; color: var(--accent); background: var(--accent-soft); padding: 3px 8px; border-radius: 5px; }
-.enunciado { margin: 0; font-size: 18px; font-weight: 500; }
-.opcoes { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
-.opcao {
-  width: 100%; display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; text-align: left;
-  font: inherit; font-size: 16px; color: var(--ink); background: var(--surface);
-  border: 1.5px solid var(--line); border-radius: 8px; padding: 11px 14px; cursor: pointer;
-}
-.opcao .letra {
-  width: 26px; height: 26px; display: grid; place-items: center; border-radius: 6px; border: 1px solid var(--line);
-  font-family: var(--f-mono); font-size: 13px; font-weight: 600; color: var(--muted);
-}
-.sem-js .opcao { cursor: default; }
-.opcao:hover:not([aria-disabled]) { border-color: var(--accent); }
-.opcao[aria-disabled] { cursor: default; }
-.opcao.certa { border-color: var(--ok); background: var(--ok-bg); }
-.opcao.certa .letra { background: var(--ok); border-color: var(--ok); color: var(--surface); }
-.opcao.errada { border-color: var(--bad); background: var(--bad-bg); }
-.opcao.errada .letra { background: var(--bad); border-color: var(--bad); color: var(--surface); }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.bilhete { position: relative; margin: 34px 4px 40px; padding: 22px 22px 18px; background: #fff; border: 1px solid var(--linha); transform: rotate(-.7deg); box-shadow: 0 10px 22px -16px rgba(31, 42, 68, .45); }
+.bilhete::before { content: ""; position: absolute; top: -11px; left: 50%; width: 92px; height: 22px; margin-left: -46px; background: rgba(245, 213, 71, .6); transform: rotate(2deg); }
+.bilhete p { margin: 0 0 8px; font-family: var(--serif); font-size: 18px; line-height: 1.55; }
+.bilhete p:last-child { margin: 0; }
 
-.veredito { margin: 0; font-weight: 700; }
-.veredito.ok { color: var(--ok); }
-.veredito.bad { color: var(--bad); }
-details { border-top: 1px solid var(--line); padding-top: 12px; }
-summary { cursor: pointer; font-weight: 600; color: var(--accent); }
-.explica { display: grid; gap: 10px; margin-top: 12px; }
+.questoes { list-style: none; margin: 0; padding: 0; }
+.questao { padding: 30px 0 28px; border-top: 1px dashed var(--linha); scroll-margin-top: 12px; }
+.questao:first-child { border-top: 0; padding-top: 8px; }
+.cabeca { display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px; }
+.num { font-family: var(--serif); font-size: 34px; font-weight: 700; line-height: 1; }
+.de { font-size: 14px; color: var(--tinta-2); }
+.tema { font-family: var(--serif); font-style: italic; font-size: 15px; color: var(--tinta-2); margin-left: auto; text-align: right; }
+.enunciado { margin: 0 0 16px; font-size: 18.5px; font-weight: 500; }
+
+.opcoes { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.opcao { width: 100%; display: grid; grid-template-columns: 40px 1fr; gap: 8px; align-items: start; text-align: left; font: inherit; font-size: 17px; color: var(--tinta); background: transparent; border: 0; border-radius: 6px; padding: 8px 8px 8px 4px; cursor: pointer; }
+.opcao:hover:not([aria-disabled]) { background: rgba(245, 213, 71, .22); }
+.sem-js .opcao, .opcao[aria-disabled] { cursor: default; }
+.opcao .texto { padding-top: 5px; }
+.letra { position: relative; width: 36px; height: 36px; display: grid; place-items: center; font-family: var(--serif); font-size: 19px; font-weight: 700; color: var(--tinta-2); }
+.circulo { position: absolute; inset: -3px; width: 42px; height: 42px; overflow: visible; }
+.circulo path { fill: none; stroke: var(--linha); stroke-width: 2.2; stroke-linecap: round; }
+.opcao.certa .letra, .opcao.errada .letra { color: var(--tinta); }
+.opcao.certa .circulo path { stroke: var(--verde); stroke-width: 3; stroke-dasharray: 130; stroke-dashoffset: 130; animation: risca .5s ease-out forwards; }
+.opcao.errada .circulo path { stroke: var(--vermelho); stroke-width: 3; stroke-dasharray: 130; stroke-dashoffset: 130; animation: risca .5s ease-out forwards; }
+.opcao.certa .texto { font-weight: 600; }
+.opcao.errada .texto { color: var(--tinta-2); text-decoration: line-through; text-decoration-color: var(--vermelho); text-decoration-thickness: 1.5px; }
+@keyframes risca { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .opcao .circulo path { animation: none !important; stroke-dashoffset: 0 !important; } }
+:focus-visible { outline: 2px solid var(--tinta); outline-offset: 2px; }
+
+.veredito { margin: 12px 0 0; font-family: var(--serif); font-style: italic; font-size: 18px; }
+.veredito.ok { color: var(--verde); }
+.veredito.bad { color: var(--vermelho); }
+details { margin-top: 12px; }
+summary { cursor: pointer; display: inline-block; font-weight: 600; color: var(--tinta); text-decoration: underline; text-decoration-color: var(--marca); text-decoration-thickness: 3px; text-underline-offset: 4px; }
+.explica { margin-top: 14px; padding: 4px 0 4px 18px; border-left: 3px solid var(--marca); display: grid; gap: 10px; }
 .explica p { margin: 0; }
-.gabarito b { color: var(--ok); }
-.sub { font-weight: 600; }
-.porque { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; color: var(--muted); font-size: 15px; }
-.porque li { display: grid; grid-template-columns: 24px 1fr; gap: 6px; }
-.porque b { font-family: var(--f-mono); }
+.gabarito b { color: var(--verde); }
+.sub { font-family: var(--serif); font-style: italic; font-weight: 700; }
+.porque { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 15.5px; color: var(--tinta-2); }
+.porque li { display: grid; grid-template-columns: 22px 1fr; gap: 6px; }
+.porque b { font-family: var(--serif); color: var(--tinta); }
 
-.placar { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: grid; gap: 4px; }
-.placar .total { margin: 0; font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
-.placar p { margin: 0; color: var(--muted); }
+.placar { margin: 18px 0 40px; padding-top: 22px; border-top: 1px dashed var(--linha); }
+.placar .total { margin: 0; color: var(--tinta); font-family: var(--serif); font-size: 28px; font-weight: 700; }
+.placar .total span { background: linear-gradient(transparent 62%, var(--marca-2) 62% 92%, transparent 92%); }
+.placar p { margin: 4px 0 0; color: var(--tinta-2); }
 
-.cta { background: var(--accent); color: var(--accent-ink); border-radius: 14px; padding: 24px 20px; display: grid; gap: 12px; }
-.cta h2 { margin: 0; font-size: 24px; line-height: 1.2; letter-spacing: -.01em; }
-.cta p { margin: 0; opacity: .92; }
-.botao {
-  justify-self: start; display: inline-block; text-decoration: none; font-weight: 700; font-size: 16px;
-  background: var(--amber); color: #1b2425; border-radius: 9px; padding: 12px 18px;
-}
-.botao:hover { filter: brightness(1.05); }
-.cupom { border-top: 1px solid color-mix(in srgb, var(--accent-ink) 25%, transparent); padding-top: 12px; display: grid; gap: 10px; }
-.botao.claro { background: transparent; color: var(--accent-ink); border: 1.5px solid currentColor; }
+.continua { background: #fff; border: 1px solid var(--linha); border-radius: 4px; padding: 26px 24px; box-shadow: 0 10px 22px -18px rgba(31, 42, 68, .5); }
+.continua h2 { margin: 0 0 8px; font-family: var(--serif); font-size: 26px; line-height: 1.2; }
+.continua p { margin: 0 0 18px; }
+.botao { display: inline-block; text-decoration: none; font-weight: 700; color: var(--tinta); background: var(--marca); border: 2px solid var(--tinta); border-radius: 6px; padding: 11px 18px; }
+.botao:hover { background: #f8de6a; }
 
-.rodape { display: grid; gap: 6px; font-size: 13px; color: var(--muted); }
-.rodape p { margin: 0; max-width: 62ch; }
-@media (prefers-reduced-motion: no-preference) {
-  .veredito { animation: entra .18s ease-out; }
-  @keyframes entra { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+.rodape { margin-top: 40px; font-size: 13.5px; color: var(--tinta-2); display: grid; gap: 4px; }
+.rodape p { margin: 0; }
+
+@media (min-width: 720px) {
+  .questoes { border-left: 2px solid var(--margem); padding-left: 26px; margin-left: -28px; }
 }
 </style>
 </head>
 <body>
 <div class="pagina">
-  <header class="barra">
-    <a class="marca" href="./">
-      <svg viewBox="0 0 800 800" aria-hidden="true"><rect width="800" height="800" rx="160" fill="#0f4c4d"/><path d="M190 250a70 70 0 0 1 70-70h280a70 70 0 0 1 70 70v200a70 70 0 0 1-70 70H390l-90 80 14-80h-54a70 70 0 0 1-70-70z" fill="#f6b73c"/><path d="M300 350l66 70 136-150" stroke="#0f4c4d" stroke-width="56" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Simulado Explicado
-    </a>
+  <header class="topo">
+    <a class="nome" href="./"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><path d="M13 37c-2-9 3-19 12-24" fill="none" stroke="#f5d547" stroke-width="11" stroke-linecap="round" opacity=".9"/><path d="M33 7c13 1 23 11 23 24 0 14-11 25-25 25C17 56 7 46 8 32 9 20 19 9 34 9" fill="none" stroke="#1f2a44" stroke-width="3.6" stroke-linecap="round"/><path d="M20 33l9 9 17-20" fill="none" stroke="#1f2a44" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>Simulado Explicado</a>
     <a class="idioma" href="es/" hreflang="es" lang="es">Español</a>
   </header>
 
-  <main class="conteudo">
-    <section class="abertura">
-      <p class="rotulo">Grátis · sem cadastro</p>
-      <h1>10 questões comentadas da prova ITIL® Foundation versão 5</h1>
-      <p class="intro">Questões novas, no estilo da prova, sobre os temas que mais caem. Escolha uma alternativa para ver se acertou e por que cada uma das outras está errada.</p>
-      <ul class="fatos"><li>10 questões</li><li>uns 15 minutos</li><li>explicação de todas as alternativas</li></ul>
-    </section>
+  <main>
+    <h1>10 questões comentadas da prova <span class="grifo">ITIL® Foundation versão 5</span></h1>
+    <p class="chamada">Escolha uma alternativa. Na hora, você vê se acertou e por que cada uma das outras está errada.</p>
+    <p class="detalhes">Grátis e sem cadastro. Leva uns 15 minutos. Atualizado em novembro de 2026.</p>
+
+    <aside class="bilhete">
+      <p>Oi! Eu trabalho com service desk e tenho a certificação ITIL 4. Montei estas questões a partir do programa oficial da versão 5 (fevereiro de 2026), com os temas que mais pesam na prova.</p>
+      <p>Uma dica antes de começar: leia o enunciado até o fim. Muitas questões contam uma situação do dia a dia e perguntam qual conceito está por trás dela.</p>
+    </aside>
 
     <ol class="questoes">
       <li class="questao" id="q1" data-certa="B">
-        <div class="cabeca"><span class="num">Questão 1 de 10</span><span class="chip">Princípios orientadores</span></div>
+        <div class="cabeca"><span class="num">1</span><span class="de">de 10</span><span class="tema">Princípios orientadores</span></div>
         <p class="enunciado">A equipe de segurança passa a exigir a troca de senha a cada 30 dias, para todos os funcionários. A regra começa numa segunda-feira. Na mesma semana, os chamados de senha bloqueada triplicam, a fila do service desk passa de dois dias e as vendas atrasam, porque os vendedores ficam sem acesso. Qual princípio orientador foi ignorado?</p>
         <ul class="opcoes">
-          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Comece onde você está</span></button></li>
-          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Pense e trabalhe de forma holística</span></button></li>
-          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Otimize e automatize</span></button></li>
-          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Mantenha simples e prático</span></button></li>
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span class="texto">Comece onde você está</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span class="texto">Pense e trabalhe de forma holística</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span class="texto">Otimize e automatize</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span class="texto">Mantenha simples e prático</span></button></li>
         </ul>
         <p class="veredito" hidden></p>
         <details>
@@ -165,13 +149,13 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
         </details>
       </li>
       <li class="questao" id="q2" data-certa="D">
-        <div class="cabeca"><span class="num">Questão 2 de 10</span><span class="chip">Princípios orientadores</span></div>
+        <div class="cabeca"><span class="num">2</span><span class="de">de 10</span><span class="tema">Princípios orientadores</span></div>
         <p class="enunciado">A TI mede o sucesso do novo portal de RH pelo número de funções entregues: já são 40. Mesmo assim, os funcionários continuam ligando para o RH com dúvidas sobre férias e holerite, porque não acham as respostas no portal. Pelo princípio “Foco no valor”, o que a TI deveria acompanhar?</p>
         <ul class="opcoes">
-          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Quantas funções novas a equipe entrega por mês, comparado com o plano do projeto</span></button></li>
-          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Quanto custou cada função do portal, para mostrar à diretoria o retorno do projeto</span></button></li>
-          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Quantas horas a equipe de desenvolvimento trabalhou no portal a cada mês</span></button></li>
-          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Se os funcionários conseguem tirar as dúvidas pelo portal, sem ligar para o RH</span></button></li>
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span class="texto">Quantas funções novas a equipe entrega por mês, comparado com o plano do projeto</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span class="texto">Quanto custou cada função do portal, para mostrar à diretoria o retorno do projeto</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span class="texto">Quantas horas a equipe de desenvolvimento trabalhou no portal a cada mês</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span class="texto">Se os funcionários conseguem tirar as dúvidas pelo portal, sem ligar para o RH</span></button></li>
         </ul>
         <p class="veredito" hidden></p>
         <details>
@@ -189,13 +173,13 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
         </details>
       </li>
       <li class="questao" id="q3" data-certa="A">
-        <div class="cabeca"><span class="num">Questão 3 de 10</span><span class="chip">Valor e experiência</span></div>
+        <div class="cabeca"><span class="num">3</span><span class="de">de 10</span><span class="tema">Valor e experiência</span></div>
         <p class="enunciado">O novo sistema de ponto nunca sai do ar, é rápido e protege bem os dados. Mas ele não registra horas extras, e o RH precisa delas para calcular o salário. Por isso, o RH continua fazendo planilhas à mão. O que falta nesse serviço?</p>
         <ul class="opcoes">
-          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Utilidade</span></button></li>
-          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Garantia</span></button></li>
-          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Sustentabilidade</span></button></li>
-          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Experiência do usuário</span></button></li>
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span class="texto">Utilidade</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span class="texto">Garantia</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span class="texto">Sustentabilidade</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span class="texto">Experiência do usuário</span></button></li>
         </ul>
         <p class="veredito" hidden></p>
         <details>
@@ -213,13 +197,13 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
         </details>
       </li>
       <li class="questao" id="q4" data-certa="C">
-        <div class="cabeca"><span class="num">Questão 4 de 10</span><span class="chip">Sistema de Valor</span></div>
+        <div class="cabeca"><span class="num">4</span><span class="de">de 10</span><span class="tema">Sistema de Valor</span></div>
         <p class="enunciado">Às 7h, o leitor de crachá da portaria para de funcionar, e ninguém consegue entrar no prédio. O técnico troca o leitor, e a entrada volta ao normal às 7h40. Como o framework chama essa interrupção?</p>
         <ul class="opcoes">
-          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Um problema, porque um equipamento quebrou e precisou ser trocado</span></button></li>
-          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Um evento, porque o leitor mudou de estado e o técnico foi avisado</span></button></li>
-          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Um incidente, porque o serviço parou sem estar planejado</span></button></li>
-          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Uma requisição de serviço, porque o técnico atendeu a um pedido</span></button></li>
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span class="texto">Um problema, porque um equipamento quebrou e precisou ser trocado</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span class="texto">Um evento, porque o leitor mudou de estado e o técnico foi avisado</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span class="texto">Um incidente, porque o serviço parou sem estar planejado</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span class="texto">Uma requisição de serviço, porque o técnico atendeu a um pedido</span></button></li>
         </ul>
         <p class="veredito" hidden></p>
         <details>
@@ -237,13 +221,13 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
         </details>
       </li>
       <li class="questao" id="q5" data-certa="B">
-        <div class="cabeca"><span class="num">Questão 5 de 10</span><span class="chip">Sistema de Valor</span></div>
+        <div class="cabeca"><span class="num">5</span><span class="de">de 10</span><span class="tema">Sistema de Valor</span></div>
         <p class="enunciado">Um colega estuda para a prova da versão 5 com um resumo que diz: “A cadeia de valor tem seis atividades: planejar, melhorar, engajar, desenhar e fazer a transição, obter/construir, entregar e dar suporte.” O que está errado?</p>
         <ul class="opcoes">
-          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Nada: a cadeia de valor da versão 5 continua com essas mesmas seis atividades</span></button></li>
-          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>A lista é da versão 4; na versão 5, são as oito atividades do ciclo de vida</span></button></li>
-          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>A lista está certa, mas falta a sétima atividade, que é monitorar e medir</span></button></li>
-          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>A cadeia de valor foi retirada da versão 5 e trocada pelas quatro dimensões</span></button></li>
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span class="texto">Nada: a cadeia de valor da versão 5 continua com essas mesmas seis atividades</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span class="texto">A lista é da versão 4; na versão 5, são as oito atividades do ciclo de vida</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span class="texto">A lista está certa, mas falta a sétima atividade, que é monitorar e medir</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span class="texto">A cadeia de valor foi retirada da versão 5 e trocada pelas quatro dimensões</span></button></li>
         </ul>
         <p class="veredito" hidden></p>
         <details>
@@ -261,13 +245,13 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
         </details>
       </li>
       <li class="questao" id="q6" data-certa="A">
-        <div class="cabeca"><span class="num">Questão 6 de 10</span><span class="chip">Sistema de Valor</span></div>
+        <div class="cabeca"><span class="num">6</span><span class="de">de 10</span><span class="tema">Sistema de Valor</span></div>
         <p class="enunciado">A equipe mediu que o chat de atendimento leva, em média, 12 minutos para dar a primeira resposta. Agora ela define a meta: responder em até 3 minutos até junho, com nota de satisfação de pelo menos 4,5. Em qual passo do modelo de melhoria contínua a equipe está?</p>
         <ul class="opcoes">
-          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Onde queremos estar?</span></button></li>
-          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Onde estamos agora?</span></button></li>
-          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Como chegamos lá?</span></button></li>
-          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Estamos chegando lá?</span></button></li>
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span class="texto">Onde queremos estar?</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span class="texto">Onde estamos agora?</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span class="texto">Como chegamos lá?</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span class="texto">Estamos chegando lá?</span></button></li>
         </ul>
         <p class="veredito" hidden></p>
         <details>
@@ -285,13 +269,13 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
         </details>
       </li>
       <li class="questao" id="q7" data-certa="C">
-        <div class="cabeca"><span class="num">Questão 7 de 10</span><span class="chip">Quatro dimensões</span></div>
+        <div class="cabeca"><span class="num">7</span><span class="de">de 10</span><span class="tema">Quatro dimensões</span></div>
         <p class="enunciado">A empresa junta desenvolvedores e analistas de operação em times por produto, cada um com um líder. Também muda a avaliação de desempenho, para premiar o resultado do time, e não o de cada pessoa. Qual dimensão está em foco?</p>
         <ul class="opcoes">
-          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Fluxos de valor e processos</span></button></li>
-          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Informação e tecnologia</span></button></li>
-          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Organizações e pessoas</span></button></li>
-          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Parceiros e fornecedores</span></button></li>
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span class="texto">Fluxos de valor e processos</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span class="texto">Informação e tecnologia</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span class="texto">Organizações e pessoas</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span class="texto">Parceiros e fornecedores</span></button></li>
         </ul>
         <p class="veredito" hidden></p>
         <details>
@@ -309,13 +293,13 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
         </details>
       </li>
       <li class="questao" id="q8" data-certa="D">
-        <div class="cabeca"><span class="num">Questão 8 de 10</span><span class="chip">Ciclo de vida</span></div>
+        <div class="cabeca"><span class="num">8</span><span class="de">de 10</span><span class="tema">Ciclo de vida</span></div>
         <p class="enunciado">Qual destas situações faz parte da atividade “entregar”, e não de “dar suporte”?</p>
         <ul class="opcoes">
-          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Uma usuária não consegue imprimir, e o analista troca o driver com defeito</span></button></li>
-          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>O sistema de vendas fica lento de repente, e a equipe restaura o desempenho</span></button></li>
-          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Um funcionário vê um erro ao salvar arquivos, e o analista corrige a falha</span></button></li>
-          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Uma gerente pede pelo portal uma licença prevista no catálogo e a recebe</span></button></li>
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span class="texto">Uma usuária não consegue imprimir, e o analista troca o driver com defeito</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span class="texto">O sistema de vendas fica lento de repente, e a equipe restaura o desempenho</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span class="texto">Um funcionário vê um erro ao salvar arquivos, e o analista corrige a falha</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span class="texto">Uma gerente pede pelo portal uma licença prevista no catálogo e a recebe</span></button></li>
         </ul>
         <p class="veredito" hidden></p>
         <details>
@@ -333,13 +317,13 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
         </details>
       </li>
       <li class="questao" id="q9" data-certa="A">
-        <div class="cabeca"><span class="num">Questão 9 de 10</span><span class="chip">Fluxos de valor</span></div>
+        <div class="cabeca"><span class="num">9</span><span class="de">de 10</span><span class="tema">Fluxos de valor</span></div>
         <p class="enunciado">Um hospital mapeou quatro fluxos de valor. Qual deles é um fluxo de valor principal (core)?</p>
         <ul class="opcoes">
-          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Paciente agenda um exame → paciente recebe o resultado</span></button></li>
-          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Mês termina → salários da equipe pagos</span></button></li>
-          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Vaga de enfermagem aberta → enfermeira contratada</span></button></li>
-          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Equipamento quebra → equipamento consertado pela manutenção</span></button></li>
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span class="texto">Paciente agenda um exame → paciente recebe o resultado</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span class="texto">Mês termina → salários da equipe pagos</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span class="texto">Vaga de enfermagem aberta → enfermeira contratada</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span class="texto">Equipamento quebra → equipamento consertado pela manutenção</span></button></li>
         </ul>
         <p class="veredito" hidden></p>
         <details>
@@ -357,13 +341,13 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
         </details>
       </li>
       <li class="questao" id="q10" data-certa="B">
-        <div class="cabeca"><span class="num">Questão 10 de 10</span><span class="chip">Jornada de serviço</span></div>
+        <div class="cabeca"><span class="num">10</span><span class="de">de 10</span><span class="tema">Jornada de serviço</span></div>
         <p class="enunciado">Depois de algumas reuniões, o provedor entende o que a escola precisa. Ele transforma isso em requisitos claros e apresenta três pacotes de serviço, com preços, horários de atendimento e prazos diferentes, para a escola escolher. Nada foi assinado ainda. Em qual etapa da jornada de serviço eles estão?</p>
         <ul class="opcoes">
-          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span>Engajar</span></button></li>
-          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span>Ofertar</span></button></li>
-          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span>Concordar</span></button></li>
-          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span>Integrar</span></button></li>
+          <li><button type="button" class="opcao" data-letra="A"><span class="letra">A</span><span class="texto">Engajar</span></button></li>
+          <li><button type="button" class="opcao" data-letra="B"><span class="letra">B</span><span class="texto">Ofertar</span></button></li>
+          <li><button type="button" class="opcao" data-letra="C"><span class="letra">C</span><span class="texto">Concordar</span></button></li>
+          <li><button type="button" class="opcao" data-letra="D"><span class="letra">D</span><span class="texto">Integrar</span></button></li>
         </ul>
         <p class="veredito" hidden></p>
         <details>
@@ -387,22 +371,20 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
       <p id="nota" hidden></p>
     </section>
 
-    <section class="cta">
-      <h2>Quer treinar com 240 questões?</h2>
-      <p>Os 6 simulados completos estão na Udemy. Cada um tem 40 questões, 60 minutos e nota de corte de 65%, como a prova. Todas as questões explicam cada alternativa, como aqui.</p>
+    <section class="continua">
+      <h2>Quer continuar treinando?</h2>
+      <p>Montei 6 simulados completos na Udemy, com 240 questões. Cada um tem 40 questões, 60 minutos e nota de corte de 65%, como a prova. Todas explicam cada alternativa, do mesmo jeito que aqui.</p>
       <a class="botao" href="https://www.udemy.com/course/simulados-itsm-foundation-5-240-questoes-explicadas/?referralCode=F9D8726A6EAD9C6E19E5">Ver os simulados na Udemy</a>
-
-
     </section>
   </main>
 
   <footer class="rodape">
-    <p>Material independente e não oficial. ITIL® é marca registrada da PeopleCert.</p>
-    <p>Questões originais, escritas com apoio de inteligência artificial a partir do programa oficial da versão 5 (fevereiro de 2026).</p>
-    <p>Esta página não usa cookies nem rastreamento.</p>
+    <p>Material independente, sem ligação com a PeopleCert. ITIL® é marca registrada da PeopleCert.</p>
+    <p>Questões escritas com ajuda de IA, a partir do programa oficial da versão 5.</p>
+    <p>Sem cookies e sem rastreamento.</p>
   </footer>
 </div>
-<script type="application/json" id="textos">{"acertou":"Você acertou.","errou":"Não foi dessa vez.","respondidas":"{X} de {T} respondidas","placar":"Você acertou {X} de {T}","acima":"Acima da nota de corte da prova (65%).","abaixo":"Abaixo da nota de corte da prova (65%). Releia as explicações das que errou."}</script>
+<script type="application/json" id="textos">{"acertou": "Isso! Você acertou.", "errou": "Não foi dessa vez. A certa está circulada em verde.", "respondidas": "{X} de {T} respondidas", "placar": "Você acertou {X} de {T}", "acima": "Acima da nota de corte da prova (65%).", "abaixo": "Abaixo da nota de corte da prova (65%). Releia as explicações das que errou."}</script>
 <script>
 (function () {
   document.documentElement.classList.remove("sem-js");
@@ -410,6 +392,8 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
   var questoes = Array.prototype.slice.call(document.querySelectorAll(".questao"));
   var total = document.getElementById("total"), nota = document.getElementById("nota");
   var respondidas = 0, acertos = 0;
+  var CIRCULO = '<svg class="circulo" viewBox="0 0 44 44" aria-hidden="true"><path d="M24 4c10 1 17 9 16 19-1 11-10 18-20 17C10 39 3 31 4 21 5 12 13 5 26 6"/></svg>';
+  Array.prototype.forEach.call(document.querySelectorAll(".letra"), function (l) { l.insertAdjacentHTML("beforeend", CIRCULO); });
   function preencher(s, x) { return s.replace("{X}", x).replace("{T}", questoes.length); }
   questoes.forEach(function (q) {
     var opcoes = Array.prototype.slice.call(q.querySelectorAll(".opcao"));
@@ -417,11 +401,12 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
       b.addEventListener("click", function () {
         if (q.classList.contains("respondida")) return;
         q.classList.add("respondida");
-        var ok = b.getAttribute("data-letra") === q.getAttribute("data-certa");
+        var certa = q.getAttribute("data-certa");
+        var ok = b.getAttribute("data-letra") === certa;
         respondidas++; if (ok) acertos++;
         opcoes.forEach(function (o) {
           o.setAttribute("aria-disabled", "true");
-          if (o.getAttribute("data-letra") === q.getAttribute("data-certa")) o.classList.add("certa");
+          if (o.getAttribute("data-letra") === certa) o.classList.add("certa");
         });
         if (!ok) b.classList.add("errada");
         b.setAttribute("aria-pressed", "true");
@@ -431,7 +416,7 @@ summary { cursor: pointer; font-weight: 600; color: var(--accent); }
         v.hidden = false;
         q.querySelector("details").open = true;
         if (respondidas === questoes.length) {
-          total.textContent = preencher(T.placar, acertos);
+          total.innerHTML = "<span>" + preencher(T.placar, acertos) + "</span>";
           nota.textContent = acertos / questoes.length >= 0.65 ? T.acima : T.abaixo;
           nota.hidden = false;
         } else {
